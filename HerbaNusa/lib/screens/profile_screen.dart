@@ -136,7 +136,7 @@ class ProfileScreen extends StatelessWidget {
               const MenuRow(
                 icon: Icons.info_outline,
                 title: 'Tentang HerbaNusa',
-                subtitle: 'Versi 1.0.0 · Project ML 2026',
+                subtitle: 'Versi 1.0.1 · Project ML 2026',
               ),
             ],
           ),

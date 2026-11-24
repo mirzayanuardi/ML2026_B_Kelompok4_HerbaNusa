@@ -16,7 +16,7 @@ class OnboardingScreen extends StatelessWidget {
       body: Column(
         children: [
           Container(
-            height: size.height * 0.5,
+            height: size.height * 0.46,
             width: double.infinity,
             decoration: const BoxDecoration(
               gradient: LinearGradient(
@@ -78,14 +78,15 @@ class OnboardingScreen extends StatelessWidget {
                     ),
                     const SizedBox(height: 12),
                     const Text(
-                      'Foto tanaman, lalu lihat apakah ia pangan, obat, atau beracun, lengkap dengan panduan P3K.',
+                      'Ambil atau pilih foto tanaman. Lihat hasil identifikasi, bagian yang biasa dimakan atau perlu dihindari, dan penggunaan tradisionalnya.',
                       textAlign: TextAlign.center,
                       style: TextStyle(
                         color: inkMuted,
-                        fontSize: 14,
+                        fontSize: 12,
                         height: 1.5,
                       ),
                     ),
+                    const SizedBox(height: 16),
                     const Spacer(),
                     const _Disclaimer(),
                     const SizedBox(height: 12),
@@ -199,7 +200,7 @@ class _Disclaimer extends StatelessWidget {
         Expanded(
           child: Text(
             'HerbaNusa hanya mengenal 100 spesies dan bisa salah. Bukan alat diagnosis, '
-            'bukan pengganti dokter atau apoteker. Jangan konsumsi tanaman hanya berdasarkan hasil aplikasi.',
+            'bukan pengganti dokter atau apoteker. Anda bertanggung jawab atas keputusan untuk mengonsumsi tanaman dan risikonya.',
             style: TextStyle(color: ink, fontSize: 11.5, height: 1.45),
           ),
         ),
