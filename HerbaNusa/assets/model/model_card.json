@@ -1,0 +1,514 @@
+{
+ "threshold": 0.27,
+ "top1": 0.8915989159891599,
+ "top3": 0.9525745257452575,
+ "macro_f1": 0.8881037754469885,
+ "test_images": 1476,
+ "train_images": 6887,
+ "coverage": 0.9336043360433605,
+ "accuracy_answered": 0.9274310595065312,
+ "fatal_rate": 0.04279279279279279,
+ "fatal_rate_answered": 0.022,
+ "per_class": {
+  "Abelmoschus Esculentus (Okra)": {
+   "recall": 1.0,
+   "f1": 0.9677,
+   "support": 15
+  },
+  "Acorus Calamus (Dlingo)": {
+   "recall": 0.5333,
+   "f1": 0.6667,
+   "support": 15
+  },
+  "Aloe Vera (Lidah Buaya)": {
+   "recall": 1.0,
+   "f1": 0.9677,
+   "support": 15
+  },
+  "Alstonia Scholaris (Pulai)": {
+   "recall": 0.8571,
+   "f1": 0.8889,
+   "support": 14
+  },
+  "Amaranthus Spinosus (Bayam Duri)": {
+   "recall": 0.9333,
+   "f1": 0.8485,
+   "support": 15
+  },
+  "Andrographis Paniculata (Sambiloto)": {
+   "recall": 0.9333,
+   "f1": 0.9032,
+   "support": 15
+  },
+  "Annona Muricata (Sirsak)": {
+   "recall": 1.0,
+   "f1": 1.0,
+   "support": 15
+  },
+  "Annona Squamosa (Srikaya)": {
+   "recall": 1.0,
+   "f1": 0.9375,
+   "support": 15
+  },
+  "Anredera Cordifolia (Binahong)": {
+   "recall": 0.8,
+   "f1": 0.8276,
+   "support": 15
+  },
+  "Apium Graveolens (Seledri)": {
+   "recall": 0.9286,
+   "f1": 0.963,
+   "support": 14
+  },
+  "Artocarpus Heterophyllus (Nangka Mini)": {
+   "recall": 1.0,
+   "f1": 1.0,
+   "support": 15
+  },
+  "Artocarpus Integer (Nangka Cempedak)": {
+   "recall": 1.0,
+   "f1": 1.0,
+   "support": 15
+  },
+  "Averrhoa Bilimbi (Belimbing Wuluh)": {
+   "recall": 1.0,
+   "f1": 1.0,
+   "support": 15
+  },
+  "Blumea Balsamifera (Sembung)": {
+   "recall": 0.8667,
+   "f1": 0.9286,
+   "support": 15
+  },
+  "Borreria Hispida (Gempur Batu)": {
+   "recall": 1.0,
+   "f1": 0.9677,
+   "support": 15
+  },
+  "Caesalpinia Sappan L (Secang)": {
+   "recall": 1.0,
+   "f1": 1.0,
+   "support": 15
+  },
+  "Caladium Cicolor (Keladi)": {
+   "recall": 1.0,
+   "f1": 0.9091,
+   "support": 15
+  },
+  "Calendula Officinalis (Marigold)": {
+   "recall": 1.0,
+   "f1": 1.0,
+   "support": 15
+  },
+  "Canangium Odoratum (Kenanga)": {
+   "recall": 1.0,
+   "f1": 0.9677,
+   "support": 15
+  },
+  "Catharanthus Roseus (Tapak Dara)": {
+   "recall": 1.0,
+   "f1": 1.0,
+   "support": 15
+  },
+  "Celosia Cristata (Jengger Ayam)": {
+   "recall": 1.0,
+   "f1": 1.0,
+   "support": 15
+  },
+  "Centella Asiatica (Pegagan)": {
+   "recall": 0.9333,
+   "f1": 0.8485,
+   "support": 15
+  },
+  "Cestrum Nocturnum (Sedap Malam)": {
+   "recall": 0.8667,
+   "f1": 0.8966,
+   "support": 15
+  },
+  "Citrus Amblycarpa (Jeruk Limau)": {
+   "recall": 0.8667,
+   "f1": 0.8667,
+   "support": 15
+  },
+  "Clinalanthus Nutans (Dandang Gendis)": {
+   "recall": 0.5385,
+   "f1": 0.6364,
+   "support": 13
+  },
+  "Clitoria Ternatea (Kembang Telang)": {
+   "recall": 1.0,
+   "f1": 1.0,
+   "support": 15
+  },
+  "Crinum Asiaticum (Bakung Putih)": {
+   "recall": 1.0,
+   "f1": 1.0,
+   "support": 15
+  },
+  "Curcuma Domestica (Kunyit)": {
+   "recall": 1.0,
+   "f1": 0.9677,
+   "support": 15
+  },
+  "Cyclea Barbata (Cincau Hijau)": {
+   "recall": 0.5333,
+   "f1": 0.5161,
+   "support": 15
+  },
+  "Cymbopogon Nardus (Serai)": {
+   "recall": 0.8667,
+   "f1": 0.8667,
+   "support": 15
+  },
+  "Derris Elliptica (Tuba)": {
+   "recall": 0.8667,
+   "f1": 0.8966,
+   "support": 15
+  },
+  "Desmodium Triquitrum (Daun Duduk)": {
+   "recall": 0.6667,
+   "f1": 0.7143,
+   "support": 15
+  },
+  "Dioscorea Hispida (Gadung)": {
+   "recall": 0.3846,
+   "f1": 0.5,
+   "support": 13
+  },
+  "Eleutherine Americana (Bawang Dayak)": {
+   "recall": 1.0,
+   "f1": 1.0,
+   "support": 14
+  },
+  "Euodia Suaveolens (Zodia)": {
+   "recall": 0.8,
+   "f1": 0.8276,
+   "support": 15
+  },
+  "Eupatorium Triplinerve (Prasman)": {
+   "recall": 0.9286,
+   "f1": 0.8966,
+   "support": 14
+  },
+  "Euphorbia Tirucalli (Patah Tulang)": {
+   "recall": 1.0,
+   "f1": 0.8,
+   "support": 14
+  },
+  "Euphoria Longan (Kelengkeng)": {
+   "recall": 0.9333,
+   "f1": 0.9032,
+   "support": 15
+  },
+  "Ficus Carica (Tin)": {
+   "recall": 0.9286,
+   "f1": 0.963,
+   "support": 14
+  },
+  "Ficus Septica (Awar-Awar)": {
+   "recall": 0.7333,
+   "f1": 0.7097,
+   "support": 15
+  },
+  "Graptophyllum Pictum (Daun Ungu)": {
+   "recall": 0.7333,
+   "f1": 0.7586,
+   "support": 15
+  },
+  "Gynura Segetum (Daun Dewa)": {
+   "recall": 0.4667,
+   "f1": 0.6364,
+   "support": 15
+  },
+  "Hibiscus Rosa-sinensis (Kembang Sepatu)": {
+   "recall": 1.0,
+   "f1": 0.9655,
+   "support": 14
+  },
+  "Hibiscus Sabdariffa (Rosela)": {
+   "recall": 0.9286,
+   "f1": 0.963,
+   "support": 14
+  },
+  "Houttoynia Cordata (Amis-Amisan)": {
+   "recall": 0.6154,
+   "f1": 0.7619,
+   "support": 13
+  },
+  "Hydrocotyle Sibthorpioides (Semanggi Gunung)": {
+   "recall": 1.0,
+   "f1": 1.0,
+   "support": 15
+  },
+  "Impatiens Balsamina (Pacar Air)": {
+   "recall": 0.9286,
+   "f1": 0.9286,
+   "support": 14
+  },
+  "Isotoma Longiflora (Ki Tolod)": {
+   "recall": 1.0,
+   "f1": 1.0,
+   "support": 15
+  },
+  "Jasminum Sambac (Melati)": {
+   "recall": 0.8667,
+   "f1": 0.8125,
+   "support": 15
+  },
+  "Jatropa Multifida (Betadin)": {
+   "recall": 0.8667,
+   "f1": 0.9286,
+   "support": 15
+  },
+  "Kaempferia Galanga (Kencur)": {
+   "recall": 1.0,
+   "f1": 0.9677,
+   "support": 15
+  },
+  "Melaleuca Leucadendra (Kayu Putih)": {
+   "recall": 0.9333,
+   "f1": 0.875,
+   "support": 15
+  },
+  "Melia Azedarach (Mindi)": {
+   "recall": 0.7333,
+   "f1": 0.8148,
+   "support": 15
+  },
+  "Melissa officinalis (Lemon Balm)": {
+   "recall": 1.0,
+   "f1": 0.8824,
+   "support": 15
+  },
+  "Merremia Mammosa (Bidara)": {
+   "recall": 0.4667,
+   "f1": 0.5833,
+   "support": 15
+  },
+  "Michelia Alba (Kembang Kantil)": {
+   "recall": 0.9333,
+   "f1": 0.9655,
+   "support": 15
+  },
+  "Mirabilis Jalapa (Bunga Pukul Empat)": {
+   "recall": 0.9286,
+   "f1": 0.963,
+   "support": 14
+  },
+  "Morinda Citrifolia (Mengkudu)": {
+   "recall": 1.0,
+   "f1": 1.0,
+   "support": 15
+  },
+  "Morus Alba (Murbei)": {
+   "recall": 1.0,
+   "f1": 1.0,
+   "support": 15
+  },
+  "Muraya Paniculata (Kemuning)": {
+   "recall": 0.9333,
+   "f1": 0.9655,
+   "support": 15
+  },
+  "Murraya Koenigii (Daun Kari)": {
+   "recall": 0.5714,
+   "f1": 0.6667,
+   "support": 14
+  },
+  "Nepeta Cataria (Catnip)": {
+   "recall": 0.8667,
+   "f1": 0.8966,
+   "support": 15
+  },
+  "Nothopanax Scutellarium (Mangkokan)": {
+   "recall": 0.9333,
+   "f1": 0.875,
+   "support": 15
+  },
+  "Ocimum Americanum (Selasih)": {
+   "recall": 1.0,
+   "f1": 0.9677,
+   "support": 15
+  },
+  "Ocimum Basilicum (Kemangi)": {
+   "recall": 1.0,
+   "f1": 0.9375,
+   "support": 15
+  },
+  "Olea Europaea (Zaitun)": {
+   "recall": 1.0,
+   "f1": 0.9375,
+   "support": 15
+  },
+  "Orthosiphon Spicatus (Kumis Kucing)": {
+   "recall": 0.8667,
+   "f1": 0.9286,
+   "support": 15
+  },
+  "Pandanus Amaryllifolius (Pandan)": {
+   "recall": 0.9333,
+   "f1": 0.9032,
+   "support": 15
+  },
+  "Parameria Laevigata (Kayu Rapet)": {
+   "recall": 1.0,
+   "f1": 0.96,
+   "support": 12
+  },
+  "Peperomia Pellucida (Suruhan)": {
+   "recall": 0.8667,
+   "f1": 0.7879,
+   "support": 15
+  },
+  "Phaleria Macrocarpa (Mahkota Dewa)": {
+   "recall": 1.0,
+   "f1": 0.9091,
+   "support": 15
+  },
+  "Physalis Angulata (Ceplukan)": {
+   "recall": 1.0,
+   "f1": 0.9677,
+   "support": 15
+  },
+  "Phytolacca Americana (Mrico Kepyar)": {
+   "recall": 0.9286,
+   "f1": 0.963,
+   "support": 14
+  },
+  "Piper Betle (Sirih)": {
+   "recall": 0.8667,
+   "f1": 0.8966,
+   "support": 15
+  },
+  "Piper Sarmentosum (Cabean)": {
+   "recall": 0.7857,
+   "f1": 0.7333,
+   "support": 14
+  },
+  "Plectranthus Scutellarioides (Miana)": {
+   "recall": 0.9333,
+   "f1": 0.9333,
+   "support": 15
+  },
+  "Pleomele Angustifolia (Suji)": {
+   "recall": 0.7857,
+   "f1": 0.7586,
+   "support": 14
+  },
+  "Pluchea Indica (Beluntas)": {
+   "recall": 0.6,
+   "f1": 0.5806,
+   "support": 15
+  },
+  "Plumbago Zeylanica (Daun Encok)": {
+   "recall": 0.9333,
+   "f1": 0.9333,
+   "support": 15
+  },
+  "Pogostemon Cablin (Nilam)": {
+   "recall": 0.8,
+   "f1": 0.8276,
+   "support": 15
+  },
+  "Pouteria Caimito (Abiu)": {
+   "recall": 0.9333,
+   "f1": 0.9655,
+   "support": 15
+  },
+  "Prunus Domestica (Plum)": {
+   "recall": 0.8667,
+   "f1": 0.9286,
+   "support": 15
+  },
+  "Psidium Guajava (Jambu Biji)": {
+   "recall": 0.9333,
+   "f1": 0.875,
+   "support": 15
+  },
+  "Pyrus Communis (Pir)": {
+   "recall": 1.0,
+   "f1": 1.0,
+   "support": 15
+  },
+  "Raulvolvia Serpentina (Pule Pandak)": {
+   "recall": 1.0,
+   "f1": 1.0,
+   "support": 15
+  },
+  "Ricinus Communis (Jarak)": {
+   "recall": 1.0,
+   "f1": 0.9677,
+   "support": 15
+  },
+  "Rosmarinus Officinalis (Rosemary)": {
+   "recall": 1.0,
+   "f1": 0.9375,
+   "support": 15
+  },
+  "Ruellia Tuberosa (Ceplikan)": {
+   "recall": 0.8667,
+   "f1": 0.8966,
+   "support": 15
+  },
+  "Ruta Angustifolia (Inggu)": {
+   "recall": 0.8,
+   "f1": 0.8571,
+   "support": 15
+  },
+  "Selaginella Doederleinii (Paku Rane)": {
+   "recall": 0.9333,
+   "f1": 0.9333,
+   "support": 15
+  },
+  "Syzygium Polyanthum (Salam)": {
+   "recall": 0.5333,
+   "f1": 0.5,
+   "support": 15
+  },
+  "Talinum Triangulare (Som Jawa)": {
+   "recall": 0.9333,
+   "f1": 0.9032,
+   "support": 15
+  },
+  "Tinospora Tuberculata (Brotowali)": {
+   "recall": 1.0,
+   "f1": 0.9091,
+   "support": 15
+  },
+  "Tithonia Diversifolia (Daun Insulin)": {
+   "recall": 1.0,
+   "f1": 1.0,
+   "support": 15
+  },
+  "Typhonium Flagelliforme (Keladi Tikus)": {
+   "recall": 0.8,
+   "f1": 0.8889,
+   "support": 15
+  },
+  "Vetiveria Zizaniodes (Akar Wangi)": {
+   "recall": 0.8,
+   "f1": 0.75,
+   "support": 15
+  },
+  "Vitex Trifolia (Legundi)": {
+   "recall": 1.0,
+   "f1": 0.9333,
+   "support": 14
+  },
+  "Zephyranthes Candida (Lili Hujan Putih)": {
+   "recall": 1.0,
+   "f1": 1.0,
+   "support": 15
+  },
+  "Zingiber Officinale (Jahe)": {
+   "recall": 0.9333,
+   "f1": 0.875,
+   "support": 15
+  },
+  "Zingiber Zerumbet (Lempuyang Gajah)": {
+   "recall": 1.0,
+   "f1": 1.0,
+   "support": 15
+  }
+ }
+}

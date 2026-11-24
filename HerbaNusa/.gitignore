@@ -1,0 +1,16 @@
+# File yang dihasilkan Flutter dan Dart
+/.dart_tool/
+/.flutter-plugins
+/.flutter-plugins-dependencies
+/.pub-cache/
+/.pub/
+/build/
+/coverage/
+
+# File lokal IDE dan Android
+/.idea/
+*.iml
+/android/.kotlin/
+
+# APK hasil build
+*.apk

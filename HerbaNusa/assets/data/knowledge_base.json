@@ -1,0 +1,1661 @@
+{
+ "Abelmoschus Esculentus (Okra)": {
+  "ilmiah": "Abelmoschus Esculentus",
+  "lokal": "Okra",
+  "pangan": 1,
+  "obat": 1,
+  "beracun": 0,
+  "level_racun": 0,
+  "bagian_aman": "buah muda",
+  "bagian_bahaya": "-",
+  "catatan": "sayur umum",
+  "p3k": [
+   "Basis pengetahuan tidak mencatat racun pada tanaman ini.",
+   "Hentikan pemakaian bila muncul gatal, ruam, bengkak, atau sesak napas (tanda alergi) dan periksakan diri bila tidak membaik."
+  ],
+  "tertukar_dengan": []
+ },
+ "Acorus Calamus (Dlingo)": {
+  "ilmiah": "Acorus Calamus",
+  "lokal": "Dlingo",
+  "pangan": 0,
+  "obat": 1,
+  "beracun": 1,
+  "level_racun": 2,
+  "bagian_aman": "-",
+  "bagian_bahaya": "rimpang dosis besar",
+  "catatan": "beta-asarone; dibatasi BPOM",
+  "p3k": [
+   "Jika tertelan: jangan memancing muntah. Kumur dengan air bersih, lalu segera ke fasilitas kesehatan terdekat atau hubungi 119.",
+   "Bawa sampel atau foto tanaman saat ke fasilitas kesehatan."
+  ],
+  "tertukar_dengan": []
+ },
+ "Aloe Vera (Lidah Buaya)": {
+  "ilmiah": "Aloe Vera",
+  "lokal": "Lidah Buaya",
+  "pangan": 1,
+  "obat": 1,
+  "beracun": 1,
+  "level_racun": 1,
+  "bagian_aman": "gel bening",
+  "bagian_bahaya": "lateks kuning (aloin)",
+  "catatan": "lateks = pencahar kuat",
+  "p3k": [
+   "Jika bagian berbahaya tertelan atau muncul mual, muntah, diare, atau pusing: hentikan konsumsi dan periksakan diri ke fasilitas kesehatan.",
+   "Getah atau minyak mengenai kulit: cuci dengan sabun dan air mengalir minimal 15 menit, hindari sinar matahari langsung pada bagian itu.",
+   "Mengenai mata: bilas dengan air mengalir 15 menit tanpa dikucek, lalu periksakan ke dokter.",
+   "Bawa sampel atau foto tanaman saat ke fasilitas kesehatan."
+  ],
+  "tertukar_dengan": []
+ },
+ "Alstonia Scholaris (Pulai)": {
+  "ilmiah": "Alstonia Scholaris",
+  "lokal": "Pulai",
+  "pangan": 0,
+  "obat": 1,
+  "beracun": 1,
+  "level_racun": 1,
+  "bagian_aman": "-",
+  "bagian_bahaya": "getah, kulit",
+  "catatan": "alkaloid; bukan untuk ibu hamil",
+  "p3k": [
+   "Jika bagian berbahaya tertelan atau muncul mual, muntah, diare, atau pusing: hentikan konsumsi dan periksakan diri ke fasilitas kesehatan.",
+   "Getah atau minyak mengenai kulit: cuci dengan sabun dan air mengalir minimal 15 menit, hindari sinar matahari langsung pada bagian itu.",
+   "Mengenai mata: bilas dengan air mengalir 15 menit tanpa dikucek, lalu periksakan ke dokter.",
+   "Bawa sampel atau foto tanaman saat ke fasilitas kesehatan."
+  ],
+  "tertukar_dengan": []
+ },
+ "Amaranthus Spinosus (Bayam Duri)": {
+  "ilmiah": "Amaranthus Spinosus",
+  "lokal": "Bayam Duri",
+  "pangan": 1,
+  "obat": 1,
+  "beracun": 0,
+  "level_racun": 0,
+  "bagian_aman": "daun muda",
+  "bagian_bahaya": "duri",
+  "catatan": "sayur",
+  "p3k": [
+   "Basis pengetahuan tidak mencatat racun pada tanaman ini.",
+   "Hentikan pemakaian bila muncul gatal, ruam, bengkak, atau sesak napas (tanda alergi) dan periksakan diri bila tidak membaik."
+  ],
+  "tertukar_dengan": []
+ },
+ "Andrographis Paniculata (Sambiloto)": {
+  "ilmiah": "Andrographis Paniculata",
+  "lokal": "Sambiloto",
+  "pangan": 0,
+  "obat": 1,
+  "beracun": 0,
+  "level_racun": 0,
+  "bagian_aman": "-",
+  "bagian_bahaya": "-",
+  "catatan": "sangat pahit; dosis hati-hati",
+  "p3k": [
+   "Basis pengetahuan tidak mencatat racun pada tanaman ini.",
+   "Hentikan pemakaian bila muncul gatal, ruam, bengkak, atau sesak napas (tanda alergi) dan periksakan diri bila tidak membaik."
+  ],
+  "tertukar_dengan": []
+ },
+ "Annona Muricata (Sirsak)": {
+  "ilmiah": "Annona Muricata",
+  "lokal": "Sirsak",
+  "pangan": 1,
+  "obat": 1,
+  "beracun": 1,
+  "level_racun": 1,
+  "bagian_aman": "buah",
+  "bagian_bahaya": "biji, daun dosis besar",
+  "catatan": "biji mengandung annonacin",
+  "p3k": [
+   "Jika bagian berbahaya tertelan atau muncul mual, muntah, diare, atau pusing: hentikan konsumsi dan periksakan diri ke fasilitas kesehatan.",
+   "Bawa sampel atau foto tanaman saat ke fasilitas kesehatan."
+  ],
+  "tertukar_dengan": []
+ },
+ "Annona Squamosa (Srikaya)": {
+  "ilmiah": "Annona Squamosa",
+  "lokal": "Srikaya",
+  "pangan": 1,
+  "obat": 1,
+  "beracun": 1,
+  "level_racun": 1,
+  "bagian_aman": "buah",
+  "bagian_bahaya": "biji",
+  "catatan": "biji toksik",
+  "p3k": [
+   "Jika bagian berbahaya tertelan atau muncul mual, muntah, diare, atau pusing: hentikan konsumsi dan periksakan diri ke fasilitas kesehatan.",
+   "Bawa sampel atau foto tanaman saat ke fasilitas kesehatan."
+  ],
+  "tertukar_dengan": []
+ },
+ "Anredera Cordifolia (Binahong)": {
+  "ilmiah": "Anredera Cordifolia",
+  "lokal": "Binahong",
+  "pangan": 1,
+  "obat": 1,
+  "beracun": 0,
+  "level_racun": 0,
+  "bagian_aman": "daun",
+  "bagian_bahaya": "-",
+  "catatan": "lalapan/obat luka",
+  "p3k": [
+   "Basis pengetahuan tidak mencatat racun pada tanaman ini.",
+   "Hentikan pemakaian bila muncul gatal, ruam, bengkak, atau sesak napas (tanda alergi) dan periksakan diri bila tidak membaik."
+  ],
+  "tertukar_dengan": []
+ },
+ "Apium Graveolens (Seledri)": {
+  "ilmiah": "Apium Graveolens",
+  "lokal": "Seledri",
+  "pangan": 1,
+  "obat": 1,
+  "beracun": 0,
+  "level_racun": 0,
+  "bagian_aman": "batang, daun",
+  "bagian_bahaya": "-",
+  "catatan": "sayur",
+  "p3k": [
+   "Basis pengetahuan tidak mencatat racun pada tanaman ini.",
+   "Hentikan pemakaian bila muncul gatal, ruam, bengkak, atau sesak napas (tanda alergi) dan periksakan diri bila tidak membaik."
+  ],
+  "tertukar_dengan": []
+ },
+ "Artocarpus Heterophyllus (Nangka Mini)": {
+  "ilmiah": "Artocarpus Heterophyllus",
+  "lokal": "Nangka Mini",
+  "pangan": 1,
+  "obat": 0,
+  "beracun": 0,
+  "level_racun": 0,
+  "bagian_aman": "buah, biji (direbus)",
+  "bagian_bahaya": "getah",
+  "catatan": "pangan",
+  "p3k": [
+   "Basis pengetahuan tidak mencatat racun pada tanaman ini.",
+   "Hentikan pemakaian bila muncul gatal, ruam, bengkak, atau sesak napas (tanda alergi) dan periksakan diri bila tidak membaik."
+  ],
+  "tertukar_dengan": []
+ },
+ "Artocarpus Integer (Nangka Cempedak)": {
+  "ilmiah": "Artocarpus Integer",
+  "lokal": "Nangka Cempedak",
+  "pangan": 1,
+  "obat": 0,
+  "beracun": 0,
+  "level_racun": 0,
+  "bagian_aman": "buah, biji",
+  "bagian_bahaya": "getah",
+  "catatan": "pangan",
+  "p3k": [
+   "Basis pengetahuan tidak mencatat racun pada tanaman ini.",
+   "Hentikan pemakaian bila muncul gatal, ruam, bengkak, atau sesak napas (tanda alergi) dan periksakan diri bila tidak membaik."
+  ],
+  "tertukar_dengan": []
+ },
+ "Averrhoa Bilimbi (Belimbing Wuluh)": {
+  "ilmiah": "Averrhoa Bilimbi",
+  "lokal": "Belimbing Wuluh",
+  "pangan": 1,
+  "obat": 1,
+  "beracun": 1,
+  "level_racun": 1,
+  "bagian_aman": "buah",
+  "bagian_bahaya": "buah mentah banyak",
+  "catatan": "oksalat tinggi; batu ginjal",
+  "p3k": [
+   "Jika bagian berbahaya tertelan atau muncul mual, muntah, diare, atau pusing: hentikan konsumsi dan periksakan diri ke fasilitas kesehatan.",
+   "Rasa terbakar atau bengkak di mulut: kumur dan minum air dingin sedikit-sedikit. Bibir, lidah, atau tenggorokan membengkak atau sulit bernapas: segera ke IGD.",
+   "Bawa sampel atau foto tanaman saat ke fasilitas kesehatan."
+  ],
+  "tertukar_dengan": []
+ },
+ "Blumea Balsamifera (Sembung)": {
+  "ilmiah": "Blumea Balsamifera",
+  "lokal": "Sembung",
+  "pangan": 0,
+  "obat": 1,
+  "beracun": 0,
+  "level_racun": 0,
+  "bagian_aman": "-",
+  "bagian_bahaya": "-",
+  "catatan": "obat tradisional",
+  "p3k": [
+   "Basis pengetahuan tidak mencatat racun pada tanaman ini.",
+   "Hentikan pemakaian bila muncul gatal, ruam, bengkak, atau sesak napas (tanda alergi) dan periksakan diri bila tidak membaik."
+  ],
+  "tertukar_dengan": []
+ },
+ "Borreria Hispida (Gempur Batu)": {
+  "ilmiah": "Borreria Hispida",
+  "lokal": "Gempur Batu",
+  "pangan": 0,
+  "obat": 1,
+  "beracun": 0,
+  "level_racun": 0,
+  "bagian_aman": "-",
+  "bagian_bahaya": "-",
+  "catatan": "obat batu ginjal (folk)",
+  "p3k": [
+   "Basis pengetahuan tidak mencatat racun pada tanaman ini.",
+   "Hentikan pemakaian bila muncul gatal, ruam, bengkak, atau sesak napas (tanda alergi) dan periksakan diri bila tidak membaik."
+  ],
+  "tertukar_dengan": []
+ },
+ "Caesalpinia Sappan L (Secang)": {
+  "ilmiah": "Caesalpinia Sappan L",
+  "lokal": "Secang",
+  "pangan": 1,
+  "obat": 1,
+  "beracun": 0,
+  "level_racun": 0,
+  "bagian_aman": "kayu (rebusan)",
+  "bagian_bahaya": "-",
+  "catatan": "minuman rempah",
+  "p3k": [
+   "Basis pengetahuan tidak mencatat racun pada tanaman ini.",
+   "Hentikan pemakaian bila muncul gatal, ruam, bengkak, atau sesak napas (tanda alergi) dan periksakan diri bila tidak membaik."
+  ],
+  "tertukar_dengan": []
+ },
+ "Caladium Cicolor (Keladi)": {
+  "ilmiah": "Caladium Cicolor",
+  "lokal": "Keladi",
+  "pangan": 0,
+  "obat": 0,
+  "beracun": 1,
+  "level_racun": 3,
+  "bagian_aman": "-",
+  "bagian_bahaya": "seluruh bagian",
+  "catatan": "oksalat kalsium; SANGAT mirip talas",
+  "p3k": [
+   "Jika tertelan: jangan memancing muntah. Kumur dengan air bersih, lalu segera ke fasilitas kesehatan terdekat atau hubungi 119.",
+   "Rasa terbakar atau bengkak di mulut: kumur dan minum air dingin sedikit-sedikit. Bibir, lidah, atau tenggorokan membengkak atau sulit bernapas: segera ke IGD.",
+   "Bawa sampel atau foto tanaman saat ke fasilitas kesehatan."
+  ],
+  "tertukar_dengan": []
+ },
+ "Calendula Officinalis (Marigold)": {
+  "ilmiah": "Calendula Officinalis",
+  "lokal": "Marigold",
+  "pangan": 1,
+  "obat": 1,
+  "beracun": 0,
+  "level_racun": 0,
+  "bagian_aman": "kelopak bunga",
+  "bagian_bahaya": "-",
+  "catatan": "teh/bunga edible",
+  "p3k": [
+   "Basis pengetahuan tidak mencatat racun pada tanaman ini.",
+   "Hentikan pemakaian bila muncul gatal, ruam, bengkak, atau sesak napas (tanda alergi) dan periksakan diri bila tidak membaik."
+  ],
+  "tertukar_dengan": []
+ },
+ "Canangium Odoratum (Kenanga)": {
+  "ilmiah": "Canangium Odoratum",
+  "lokal": "Kenanga",
+  "pangan": 0,
+  "obat": 1,
+  "beracun": 0,
+  "level_racun": 0,
+  "bagian_aman": "-",
+  "bagian_bahaya": "-",
+  "catatan": "aromatik",
+  "p3k": [
+   "Basis pengetahuan tidak mencatat racun pada tanaman ini.",
+   "Hentikan pemakaian bila muncul gatal, ruam, bengkak, atau sesak napas (tanda alergi) dan periksakan diri bila tidak membaik."
+  ],
+  "tertukar_dengan": []
+ },
+ "Catharanthus Roseus (Tapak Dara)": {
+  "ilmiah": "Catharanthus Roseus",
+  "lokal": "Tapak Dara",
+  "pangan": 0,
+  "obat": 1,
+  "beracun": 1,
+  "level_racun": 3,
+  "bagian_aman": "-",
+  "bagian_bahaya": "seluruh bagian",
+  "catatan": "alkaloid vinka; obat kanker resep",
+  "p3k": [
+   "Jika tertelan: jangan memancing muntah. Kumur dengan air bersih, lalu segera ke fasilitas kesehatan terdekat atau hubungi 119.",
+   "Bawa sampel atau foto tanaman saat ke fasilitas kesehatan."
+  ],
+  "tertukar_dengan": []
+ },
+ "Celosia Cristata (Jengger Ayam)": {
+  "ilmiah": "Celosia Cristata",
+  "lokal": "Jengger Ayam",
+  "pangan": 1,
+  "obat": 1,
+  "beracun": 0,
+  "level_racun": 0,
+  "bagian_aman": "Bagian bunga, dimasak",
+  "bagian_bahaya": "-",
+  "catatan": "bunga ornamental",
+  "p3k": [
+   "Basis pengetahuan tidak mencatat racun pada tanaman ini.",
+   "Hentikan pemakaian bila muncul gatal, ruam, bengkak, atau sesak napas (tanda alergi) dan periksakan diri bila tidak membaik."
+  ],
+  "tertukar_dengan": []
+ },
+ "Centella Asiatica (Pegagan)": {
+  "ilmiah": "Centella Asiatica",
+  "lokal": "Pegagan",
+  "pangan": 1,
+  "obat": 1,
+  "beracun": 0,
+  "level_racun": 0,
+  "bagian_aman": "daun",
+  "bagian_bahaya": "-",
+  "catatan": "lalapan + obat",
+  "p3k": [
+   "Basis pengetahuan tidak mencatat racun pada tanaman ini.",
+   "Hentikan pemakaian bila muncul gatal, ruam, bengkak, atau sesak napas (tanda alergi) dan periksakan diri bila tidak membaik."
+  ],
+  "tertukar_dengan": []
+ },
+ "Cestrum Nocturnum (Sedap Malam)": {
+  "ilmiah": "Cestrum Nocturnum",
+  "lokal": "Sedap Malam",
+  "pangan": 0,
+  "obat": 0,
+  "beracun": 1,
+  "level_racun": 3,
+  "bagian_aman": "-",
+  "bagian_bahaya": "seluruh bagian",
+  "catatan": "Solanaceae toksik",
+  "p3k": [
+   "Jika tertelan: jangan memancing muntah. Kumur dengan air bersih, lalu segera ke fasilitas kesehatan terdekat atau hubungi 119.",
+   "Bawa sampel atau foto tanaman saat ke fasilitas kesehatan."
+  ],
+  "tertukar_dengan": []
+ },
+ "Citrus Amblycarpa (Jeruk Limau)": {
+  "ilmiah": "Citrus Amblycarpa",
+  "lokal": "Jeruk Limau",
+  "pangan": 1,
+  "obat": 1,
+  "beracun": 0,
+  "level_racun": 0,
+  "bagian_aman": "buah",
+  "bagian_bahaya": "-",
+  "catatan": "bumbu",
+  "p3k": [
+   "Basis pengetahuan tidak mencatat racun pada tanaman ini.",
+   "Hentikan pemakaian bila muncul gatal, ruam, bengkak, atau sesak napas (tanda alergi) dan periksakan diri bila tidak membaik."
+  ],
+  "tertukar_dengan": []
+ },
+ "Clinalanthus Nutans (Dandang Gendis)": {
+  "ilmiah": "Clinalanthus Nutans",
+  "lokal": "Dandang Gendis",
+  "pangan": 0,
+  "obat": 1,
+  "beracun": 0,
+  "level_racun": 0,
+  "bagian_aman": "-",
+  "bagian_bahaya": "-",
+  "catatan": "obat folk",
+  "p3k": [
+   "Basis pengetahuan tidak mencatat racun pada tanaman ini.",
+   "Hentikan pemakaian bila muncul gatal, ruam, bengkak, atau sesak napas (tanda alergi) dan periksakan diri bila tidak membaik."
+  ],
+  "tertukar_dengan": []
+ },
+ "Clitoria Ternatea (Kembang Telang)": {
+  "ilmiah": "Clitoria Ternatea",
+  "lokal": "Kembang Telang",
+  "pangan": 1,
+  "obat": 1,
+  "beracun": 0,
+  "level_racun": 0,
+  "bagian_aman": "bunga",
+  "bagian_bahaya": "-",
+  "catatan": "teh biru",
+  "p3k": [
+   "Basis pengetahuan tidak mencatat racun pada tanaman ini.",
+   "Hentikan pemakaian bila muncul gatal, ruam, bengkak, atau sesak napas (tanda alergi) dan periksakan diri bila tidak membaik."
+  ],
+  "tertukar_dengan": []
+ },
+ "Crinum Asiaticum (Bakung Putih)": {
+  "ilmiah": "Crinum Asiaticum",
+  "lokal": "Bakung Putih",
+  "pangan": 0,
+  "obat": 0,
+  "beracun": 1,
+  "level_racun": 3,
+  "bagian_aman": "-",
+  "bagian_bahaya": "seluruh bagian",
+  "catatan": "alkaloid; ornamental",
+  "p3k": [
+   "Jika tertelan: jangan memancing muntah. Kumur dengan air bersih, lalu segera ke fasilitas kesehatan terdekat atau hubungi 119.",
+   "Bawa sampel atau foto tanaman saat ke fasilitas kesehatan."
+  ],
+  "tertukar_dengan": []
+ },
+ "Curcuma Domestica (Kunyit)": {
+  "ilmiah": "Curcuma Domestica",
+  "lokal": "Kunyit",
+  "pangan": 1,
+  "obat": 1,
+  "beracun": 0,
+  "level_racun": 0,
+  "bagian_aman": "rimpang",
+  "bagian_bahaya": "-",
+  "catatan": "bumbu + jamu",
+  "p3k": [
+   "Basis pengetahuan tidak mencatat racun pada tanaman ini.",
+   "Hentikan pemakaian bila muncul gatal, ruam, bengkak, atau sesak napas (tanda alergi) dan periksakan diri bila tidak membaik."
+  ],
+  "tertukar_dengan": []
+ },
+ "Cyclea Barbata (Cincau Hijau)": {
+  "ilmiah": "Cyclea Barbata",
+  "lokal": "Cincau Hijau",
+  "pangan": 1,
+  "obat": 1,
+  "beracun": 0,
+  "level_racun": 0,
+  "bagian_aman": "daun (gel)",
+  "bagian_bahaya": "-",
+  "catatan": "pangan",
+  "p3k": [
+   "Basis pengetahuan tidak mencatat racun pada tanaman ini.",
+   "Hentikan pemakaian bila muncul gatal, ruam, bengkak, atau sesak napas (tanda alergi) dan periksakan diri bila tidak membaik."
+  ],
+  "tertukar_dengan": []
+ },
+ "Cymbopogon Nardus (Serai)": {
+  "ilmiah": "Cymbopogon Nardus",
+  "lokal": "Serai",
+  "pangan": 1,
+  "obat": 1,
+  "beracun": 0,
+  "level_racun": 0,
+  "bagian_aman": "batang (sedikit)",
+  "bagian_bahaya": "-",
+  "catatan": "serai wangi; beda dgn C. citratus",
+  "p3k": [
+   "Basis pengetahuan tidak mencatat racun pada tanaman ini.",
+   "Hentikan pemakaian bila muncul gatal, ruam, bengkak, atau sesak napas (tanda alergi) dan periksakan diri bila tidak membaik."
+  ],
+  "tertukar_dengan": []
+ },
+ "Derris Elliptica (Tuba)": {
+  "ilmiah": "Derris Elliptica",
+  "lokal": "Tuba",
+  "pangan": 0,
+  "obat": 0,
+  "beracun": 1,
+  "level_racun": 3,
+  "bagian_aman": "-",
+  "bagian_bahaya": "akar",
+  "catatan": "rotenon; racun ikan",
+  "p3k": [
+   "Jika tertelan: jangan memancing muntah. Kumur dengan air bersih, lalu segera ke fasilitas kesehatan terdekat atau hubungi 119.",
+   "Bawa sampel atau foto tanaman saat ke fasilitas kesehatan."
+  ],
+  "tertukar_dengan": []
+ },
+ "Desmodium Triquitrum (Daun Duduk)": {
+  "ilmiah": "Desmodium Triquitrum",
+  "lokal": "Daun Duduk",
+  "pangan": 0,
+  "obat": 1,
+  "beracun": 0,
+  "level_racun": 0,
+  "bagian_aman": "-",
+  "bagian_bahaya": "-",
+  "catatan": "obat folk",
+  "p3k": [
+   "Basis pengetahuan tidak mencatat racun pada tanaman ini.",
+   "Hentikan pemakaian bila muncul gatal, ruam, bengkak, atau sesak napas (tanda alergi) dan periksakan diri bila tidak membaik."
+  ],
+  "tertukar_dengan": []
+ },
+ "Dioscorea Hispida (Gadung)": {
+  "ilmiah": "Dioscorea Hispida",
+  "lokal": "Gadung",
+  "pangan": 1,
+  "obat": 0,
+  "beracun": 1,
+  "level_racun": 2,
+  "bagian_aman": "umbi SETELAH proses panjang",
+  "bagian_bahaya": "umbi mentah",
+  "catatan": "dioscorin; salah proses = keracunan",
+  "p3k": [
+   "Jika tertelan: jangan memancing muntah. Kumur dengan air bersih, lalu segera ke fasilitas kesehatan terdekat atau hubungi 119.",
+   "Bawa sampel atau foto tanaman saat ke fasilitas kesehatan."
+  ],
+  "tertukar_dengan": []
+ },
+ "Eleutherine Americana (Bawang Dayak)": {
+  "ilmiah": "Eleutherine Americana",
+  "lokal": "Bawang Dayak",
+  "pangan": 0,
+  "obat": 1,
+  "beracun": 0,
+  "level_racun": 0,
+  "bagian_aman": "-",
+  "bagian_bahaya": "-",
+  "catatan": "obat folk",
+  "p3k": [
+   "Basis pengetahuan tidak mencatat racun pada tanaman ini.",
+   "Hentikan pemakaian bila muncul gatal, ruam, bengkak, atau sesak napas (tanda alergi) dan periksakan diri bila tidak membaik."
+  ],
+  "tertukar_dengan": []
+ },
+ "Euodia Suaveolens (Zodia)": {
+  "ilmiah": "Euodia Suaveolens",
+  "lokal": "Zodia",
+  "pangan": 0,
+  "obat": 1,
+  "beracun": 0,
+  "level_racun": 0,
+  "bagian_aman": "-",
+  "bagian_bahaya": "-",
+  "catatan": "pengusir nyamuk",
+  "p3k": [
+   "Basis pengetahuan tidak mencatat racun pada tanaman ini.",
+   "Hentikan pemakaian bila muncul gatal, ruam, bengkak, atau sesak napas (tanda alergi) dan periksakan diri bila tidak membaik."
+  ],
+  "tertukar_dengan": []
+ },
+ "Eupatorium Triplinerve (Prasman)": {
+  "ilmiah": "Eupatorium Triplinerve",
+  "lokal": "Prasman",
+  "pangan": 0,
+  "obat": 1,
+  "beracun": 0,
+  "level_racun": 0,
+  "bagian_aman": "-",
+  "bagian_bahaya": "-",
+  "catatan": "obat folk",
+  "p3k": [
+   "Basis pengetahuan tidak mencatat racun pada tanaman ini.",
+   "Hentikan pemakaian bila muncul gatal, ruam, bengkak, atau sesak napas (tanda alergi) dan periksakan diri bila tidak membaik."
+  ],
+  "tertukar_dengan": []
+ },
+ "Euphorbia Tirucalli (Patah Tulang)": {
+  "ilmiah": "Euphorbia Tirucalli",
+  "lokal": "Patah Tulang",
+  "pangan": 0,
+  "obat": 0,
+  "beracun": 1,
+  "level_racun": 2,
+  "bagian_aman": "-",
+  "bagian_bahaya": "getah",
+  "catatan": "getah iritan; karsinogen promotor",
+  "p3k": [
+   "Jika tertelan: jangan memancing muntah. Kumur dengan air bersih, lalu segera ke fasilitas kesehatan terdekat atau hubungi 119.",
+   "Getah atau minyak mengenai kulit: cuci dengan sabun dan air mengalir minimal 15 menit, hindari sinar matahari langsung pada bagian itu.",
+   "Mengenai mata: bilas dengan air mengalir 15 menit tanpa dikucek, lalu periksakan ke dokter.",
+   "Bawa sampel atau foto tanaman saat ke fasilitas kesehatan."
+  ],
+  "tertukar_dengan": []
+ },
+ "Euphoria Longan (Kelengkeng)": {
+  "ilmiah": "Euphoria Longan",
+  "lokal": "Kelengkeng",
+  "pangan": 1,
+  "obat": 0,
+  "beracun": 0,
+  "level_racun": 0,
+  "bagian_aman": "buah",
+  "bagian_bahaya": "biji",
+  "catatan": "biji tidak dimakan",
+  "p3k": [
+   "Basis pengetahuan tidak mencatat racun pada tanaman ini.",
+   "Hentikan pemakaian bila muncul gatal, ruam, bengkak, atau sesak napas (tanda alergi) dan periksakan diri bila tidak membaik."
+  ],
+  "tertukar_dengan": []
+ },
+ "Ficus Carica (Tin)": {
+  "ilmiah": "Ficus Carica",
+  "lokal": "Tin",
+  "pangan": 1,
+  "obat": 0,
+  "beracun": 0,
+  "level_racun": 0,
+  "bagian_aman": "buah",
+  "bagian_bahaya": "getah",
+  "catatan": "pangan",
+  "p3k": [
+   "Basis pengetahuan tidak mencatat racun pada tanaman ini.",
+   "Hentikan pemakaian bila muncul gatal, ruam, bengkak, atau sesak napas (tanda alergi) dan periksakan diri bila tidak membaik."
+  ],
+  "tertukar_dengan": []
+ },
+ "Ficus Septica (Awar-Awar)": {
+  "ilmiah": "Ficus Septica",
+  "lokal": "Awar-Awar",
+  "pangan": 0,
+  "obat": 1,
+  "beracun": 0,
+  "level_racun": 0,
+  "bagian_aman": "-",
+  "bagian_bahaya": "getah",
+  "catatan": "obat folk",
+  "p3k": [
+   "Basis pengetahuan tidak mencatat racun pada tanaman ini.",
+   "Hentikan pemakaian bila muncul gatal, ruam, bengkak, atau sesak napas (tanda alergi) dan periksakan diri bila tidak membaik."
+  ],
+  "tertukar_dengan": []
+ },
+ "Graptophyllum Pictum (Daun Ungu)": {
+  "ilmiah": "Graptophyllum Pictum",
+  "lokal": "Daun Ungu",
+  "pangan": 0,
+  "obat": 1,
+  "beracun": 0,
+  "level_racun": 0,
+  "bagian_aman": "-",
+  "bagian_bahaya": "-",
+  "catatan": "obat luka",
+  "p3k": [
+   "Basis pengetahuan tidak mencatat racun pada tanaman ini.",
+   "Hentikan pemakaian bila muncul gatal, ruam, bengkak, atau sesak napas (tanda alergi) dan periksakan diri bila tidak membaik."
+  ],
+  "tertukar_dengan": []
+ },
+ "Gynura Segetum (Daun Dewa)": {
+  "ilmiah": "Gynura Segetum",
+  "lokal": "Daun Dewa",
+  "pangan": 0,
+  "obat": 1,
+  "beracun": 1,
+  "level_racun": 3,
+  "bagian_aman": "-",
+  "bagian_bahaya": "konsumsi rutin",
+  "catatan": "alkaloid pirolizidin; hepatotoksik",
+  "p3k": [
+   "Jika tertelan: jangan memancing muntah. Kumur dengan air bersih, lalu segera ke fasilitas kesehatan terdekat atau hubungi 119.",
+   "Bawa sampel atau foto tanaman saat ke fasilitas kesehatan."
+  ],
+  "tertukar_dengan": []
+ },
+ "Hibiscus Rosa-sinensis (Kembang Sepatu)": {
+  "ilmiah": "Hibiscus Rosa-sinensis",
+  "lokal": "Kembang Sepatu",
+  "pangan": 1,
+  "obat": 1,
+  "beracun": 0,
+  "level_racun": 0,
+  "bagian_aman": "bunga",
+  "bagian_bahaya": "-",
+  "catatan": "teh/ornamental",
+  "p3k": [
+   "Basis pengetahuan tidak mencatat racun pada tanaman ini.",
+   "Hentikan pemakaian bila muncul gatal, ruam, bengkak, atau sesak napas (tanda alergi) dan periksakan diri bila tidak membaik."
+  ],
+  "tertukar_dengan": []
+ },
+ "Hibiscus Sabdariffa (Rosela)": {
+  "ilmiah": "Hibiscus Sabdariffa",
+  "lokal": "Rosela",
+  "pangan": 1,
+  "obat": 1,
+  "beracun": 0,
+  "level_racun": 0,
+  "bagian_aman": "kelopak",
+  "bagian_bahaya": "-",
+  "catatan": "teh",
+  "p3k": [
+   "Basis pengetahuan tidak mencatat racun pada tanaman ini.",
+   "Hentikan pemakaian bila muncul gatal, ruam, bengkak, atau sesak napas (tanda alergi) dan periksakan diri bila tidak membaik."
+  ],
+  "tertukar_dengan": []
+ },
+ "Houttoynia Cordata (Amis-Amisan)": {
+  "ilmiah": "Houttoynia Cordata",
+  "lokal": "Amis-Amisan",
+  "pangan": 1,
+  "obat": 1,
+  "beracun": 0,
+  "level_racun": 0,
+  "bagian_aman": "daun",
+  "bagian_bahaya": "-",
+  "catatan": "lalapan",
+  "p3k": [
+   "Basis pengetahuan tidak mencatat racun pada tanaman ini.",
+   "Hentikan pemakaian bila muncul gatal, ruam, bengkak, atau sesak napas (tanda alergi) dan periksakan diri bila tidak membaik."
+  ],
+  "tertukar_dengan": []
+ },
+ "Hydrocotyle Sibthorpioides (Semanggi Gunung)": {
+  "ilmiah": "Hydrocotyle Sibthorpioides",
+  "lokal": "Semanggi Gunung",
+  "pangan": 1,
+  "obat": 1,
+  "beracun": 0,
+  "level_racun": 0,
+  "bagian_aman": "daun",
+  "bagian_bahaya": "-",
+  "catatan": "lalapan; mirip pegagan",
+  "p3k": [
+   "Basis pengetahuan tidak mencatat racun pada tanaman ini.",
+   "Hentikan pemakaian bila muncul gatal, ruam, bengkak, atau sesak napas (tanda alergi) dan periksakan diri bila tidak membaik."
+  ],
+  "tertukar_dengan": []
+ },
+ "Impatiens Balsamina (Pacar Air)": {
+  "ilmiah": "Impatiens Balsamina",
+  "lokal": "Pacar Air",
+  "pangan": 0,
+  "obat": 1,
+  "beracun": 0,
+  "level_racun": 0,
+  "bagian_aman": "-",
+  "bagian_bahaya": "biji",
+  "catatan": "ornamental",
+  "p3k": [
+   "Basis pengetahuan tidak mencatat racun pada tanaman ini.",
+   "Hentikan pemakaian bila muncul gatal, ruam, bengkak, atau sesak napas (tanda alergi) dan periksakan diri bila tidak membaik."
+  ],
+  "tertukar_dengan": []
+ },
+ "Isotoma Longiflora (Ki Tolod)": {
+  "ilmiah": "Isotoma Longiflora",
+  "lokal": "Ki Tolod",
+  "pangan": 0,
+  "obat": 1,
+  "beracun": 1,
+  "level_racun": 2,
+  "bagian_aman": "-",
+  "bagian_bahaya": "getah",
+  "catatan": "toksik; obat folk berisiko",
+  "p3k": [
+   "Jika tertelan: jangan memancing muntah. Kumur dengan air bersih, lalu segera ke fasilitas kesehatan terdekat atau hubungi 119.",
+   "Getah atau minyak mengenai kulit: cuci dengan sabun dan air mengalir minimal 15 menit, hindari sinar matahari langsung pada bagian itu.",
+   "Mengenai mata: bilas dengan air mengalir 15 menit tanpa dikucek, lalu periksakan ke dokter.",
+   "Bawa sampel atau foto tanaman saat ke fasilitas kesehatan."
+  ],
+  "tertukar_dengan": []
+ },
+ "Jasminum Sambac (Melati)": {
+  "ilmiah": "Jasminum Sambac",
+  "lokal": "Melati",
+  "pangan": 1,
+  "obat": 1,
+  "beracun": 0,
+  "level_racun": 0,
+  "bagian_aman": "bunga (teh)",
+  "bagian_bahaya": "-",
+  "catatan": "aromatik",
+  "p3k": [
+   "Basis pengetahuan tidak mencatat racun pada tanaman ini.",
+   "Hentikan pemakaian bila muncul gatal, ruam, bengkak, atau sesak napas (tanda alergi) dan periksakan diri bila tidak membaik."
+  ],
+  "tertukar_dengan": []
+ },
+ "Jatropa Multifida (Betadin)": {
+  "ilmiah": "Jatropa Multifida",
+  "lokal": "Betadin",
+  "pangan": 0,
+  "obat": 0,
+  "beracun": 1,
+  "level_racun": 3,
+  "bagian_aman": "-",
+  "bagian_bahaya": "getah, biji",
+  "catatan": "toksik; ornamental",
+  "p3k": [
+   "Jika tertelan: jangan memancing muntah. Kumur dengan air bersih, lalu segera ke fasilitas kesehatan terdekat atau hubungi 119.",
+   "Getah atau minyak mengenai kulit: cuci dengan sabun dan air mengalir minimal 15 menit, hindari sinar matahari langsung pada bagian itu.",
+   "Mengenai mata: bilas dengan air mengalir 15 menit tanpa dikucek, lalu periksakan ke dokter.",
+   "Bawa sampel atau foto tanaman saat ke fasilitas kesehatan."
+  ],
+  "tertukar_dengan": []
+ },
+ "Kaempferia Galanga (Kencur)": {
+  "ilmiah": "Kaempferia Galanga",
+  "lokal": "Kencur",
+  "pangan": 1,
+  "obat": 1,
+  "beracun": 0,
+  "level_racun": 0,
+  "bagian_aman": "rimpang",
+  "bagian_bahaya": "-",
+  "catatan": "bumbu + jamu",
+  "p3k": [
+   "Basis pengetahuan tidak mencatat racun pada tanaman ini.",
+   "Hentikan pemakaian bila muncul gatal, ruam, bengkak, atau sesak napas (tanda alergi) dan periksakan diri bila tidak membaik."
+  ],
+  "tertukar_dengan": []
+ },
+ "Melaleuca Leucadendra (Kayu Putih)": {
+  "ilmiah": "Melaleuca Leucadendra",
+  "lokal": "Kayu Putih",
+  "pangan": 0,
+  "obat": 1,
+  "beracun": 1,
+  "level_racun": 1,
+  "bagian_aman": "-",
+  "bagian_bahaya": "minyak murni (internal)",
+  "catatan": "minyak kayu putih tidak untuk ditelan",
+  "p3k": [
+   "Jika bagian berbahaya tertelan atau muncul mual, muntah, diare, atau pusing: hentikan konsumsi dan periksakan diri ke fasilitas kesehatan.",
+   "Getah atau minyak mengenai kulit: cuci dengan sabun dan air mengalir minimal 15 menit, hindari sinar matahari langsung pada bagian itu.",
+   "Mengenai mata: bilas dengan air mengalir 15 menit tanpa dikucek, lalu periksakan ke dokter.",
+   "Bawa sampel atau foto tanaman saat ke fasilitas kesehatan."
+  ],
+  "tertukar_dengan": []
+ },
+ "Melia Azedarach (Mindi)": {
+  "ilmiah": "Melia Azedarach",
+  "lokal": "Mindi",
+  "pangan": 0,
+  "obat": 0,
+  "beracun": 1,
+  "level_racun": 3,
+  "bagian_aman": "-",
+  "bagian_bahaya": "biji, daun",
+  "catatan": "neurotoksik",
+  "p3k": [
+   "Jika tertelan: jangan memancing muntah. Kumur dengan air bersih, lalu segera ke fasilitas kesehatan terdekat atau hubungi 119.",
+   "Bawa sampel atau foto tanaman saat ke fasilitas kesehatan."
+  ],
+  "tertukar_dengan": []
+ },
+ "Melissa officinalis (Lemon Balm)": {
+  "ilmiah": "Melissa officinalis",
+  "lokal": "Lemon Balm",
+  "pangan": 1,
+  "obat": 1,
+  "beracun": 0,
+  "level_racun": 0,
+  "bagian_aman": "daun",
+  "bagian_bahaya": "-",
+  "catatan": "teh",
+  "p3k": [
+   "Basis pengetahuan tidak mencatat racun pada tanaman ini.",
+   "Hentikan pemakaian bila muncul gatal, ruam, bengkak, atau sesak napas (tanda alergi) dan periksakan diri bila tidak membaik."
+  ],
+  "tertukar_dengan": [
+   {
+    "nama": "Gynura Segetum (Daun Dewa)",
+    "keyakinan": 0.28
+   }
+  ]
+ },
+ "Merremia Mammosa (Bidara)": {
+  "ilmiah": "Merremia Mammosa",
+  "lokal": "Bidara",
+  "pangan": 0,
+  "obat": 1,
+  "beracun": 0,
+  "level_racun": 0,
+  "bagian_aman": "-",
+  "bagian_bahaya": "-",
+  "catatan": "obat folk",
+  "p3k": [
+   "Basis pengetahuan tidak mencatat racun pada tanaman ini.",
+   "Hentikan pemakaian bila muncul gatal, ruam, bengkak, atau sesak napas (tanda alergi) dan periksakan diri bila tidak membaik."
+  ],
+  "tertukar_dengan": []
+ },
+ "Michelia Alba (Kembang Kantil)": {
+  "ilmiah": "Michelia Alba",
+  "lokal": "Kembang Kantil",
+  "pangan": 0,
+  "obat": 1,
+  "beracun": 0,
+  "level_racun": 0,
+  "bagian_aman": "-",
+  "bagian_bahaya": "-",
+  "catatan": "aromatik",
+  "p3k": [
+   "Basis pengetahuan tidak mencatat racun pada tanaman ini.",
+   "Hentikan pemakaian bila muncul gatal, ruam, bengkak, atau sesak napas (tanda alergi) dan periksakan diri bila tidak membaik."
+  ],
+  "tertukar_dengan": []
+ },
+ "Mirabilis Jalapa (Bunga Pukul Empat)": {
+  "ilmiah": "Mirabilis Jalapa",
+  "lokal": "Bunga Pukul Empat",
+  "pangan": 0,
+  "obat": 1,
+  "beracun": 1,
+  "level_racun": 1,
+  "bagian_aman": "-",
+  "bagian_bahaya": "biji, akar",
+  "catatan": "purgatif; ornamental",
+  "p3k": [
+   "Jika bagian berbahaya tertelan atau muncul mual, muntah, diare, atau pusing: hentikan konsumsi dan periksakan diri ke fasilitas kesehatan.",
+   "Bawa sampel atau foto tanaman saat ke fasilitas kesehatan."
+  ],
+  "tertukar_dengan": []
+ },
+ "Morinda Citrifolia (Mengkudu)": {
+  "ilmiah": "Morinda Citrifolia",
+  "lokal": "Mengkudu",
+  "pangan": 1,
+  "obat": 1,
+  "beracun": 0,
+  "level_racun": 0,
+  "bagian_aman": "buah",
+  "bagian_bahaya": "-",
+  "catatan": "pangan olahan",
+  "p3k": [
+   "Basis pengetahuan tidak mencatat racun pada tanaman ini.",
+   "Hentikan pemakaian bila muncul gatal, ruam, bengkak, atau sesak napas (tanda alergi) dan periksakan diri bila tidak membaik."
+  ],
+  "tertukar_dengan": []
+ },
+ "Morus Alba (Murbei)": {
+  "ilmiah": "Morus Alba",
+  "lokal": "Murbei",
+  "pangan": 1,
+  "obat": 1,
+  "beracun": 0,
+  "level_racun": 0,
+  "bagian_aman": "buah, daun (teh)",
+  "bagian_bahaya": "-",
+  "catatan": "pangan",
+  "p3k": [
+   "Basis pengetahuan tidak mencatat racun pada tanaman ini.",
+   "Hentikan pemakaian bila muncul gatal, ruam, bengkak, atau sesak napas (tanda alergi) dan periksakan diri bila tidak membaik."
+  ],
+  "tertukar_dengan": []
+ },
+ "Muraya Paniculata (Kemuning)": {
+  "ilmiah": "Muraya Paniculata",
+  "lokal": "Kemuning",
+  "pangan": 0,
+  "obat": 1,
+  "beracun": 0,
+  "level_racun": 0,
+  "bagian_aman": "-",
+  "bagian_bahaya": "buah",
+  "catatan": "obat; buah tidak dimakan",
+  "p3k": [
+   "Basis pengetahuan tidak mencatat racun pada tanaman ini.",
+   "Hentikan pemakaian bila muncul gatal, ruam, bengkak, atau sesak napas (tanda alergi) dan periksakan diri bila tidak membaik."
+  ],
+  "tertukar_dengan": []
+ },
+ "Murraya Koenigii (Daun Kari)": {
+  "ilmiah": "Murraya Koenigii",
+  "lokal": "Daun Kari",
+  "pangan": 1,
+  "obat": 1,
+  "beracun": 0,
+  "level_racun": 0,
+  "bagian_aman": "daun",
+  "bagian_bahaya": "-",
+  "catatan": "bumbu",
+  "p3k": [
+   "Basis pengetahuan tidak mencatat racun pada tanaman ini.",
+   "Hentikan pemakaian bila muncul gatal, ruam, bengkak, atau sesak napas (tanda alergi) dan periksakan diri bila tidak membaik."
+  ],
+  "tertukar_dengan": []
+ },
+ "Nepeta Cataria (Catnip)": {
+  "ilmiah": "Nepeta Cataria",
+  "lokal": "Catnip",
+  "pangan": 1,
+  "obat": 1,
+  "beracun": 0,
+  "level_racun": 0,
+  "bagian_aman": "Daun dan batang untuk teh",
+  "bagian_bahaya": "-",
+  "catatan": "teh",
+  "p3k": [
+   "Basis pengetahuan tidak mencatat racun pada tanaman ini.",
+   "Hentikan pemakaian bila muncul gatal, ruam, bengkak, atau sesak napas (tanda alergi) dan periksakan diri bila tidak membaik."
+  ],
+  "tertukar_dengan": []
+ },
+ "Nothopanax Scutellarium (Mangkokan)": {
+  "ilmiah": "Nothopanax Scutellarium",
+  "lokal": "Mangkokan",
+  "pangan": 1,
+  "obat": 1,
+  "beracun": 0,
+  "level_racun": 0,
+  "bagian_aman": "daun",
+  "bagian_bahaya": "-",
+  "catatan": "lalapan",
+  "p3k": [
+   "Basis pengetahuan tidak mencatat racun pada tanaman ini.",
+   "Hentikan pemakaian bila muncul gatal, ruam, bengkak, atau sesak napas (tanda alergi) dan periksakan diri bila tidak membaik."
+  ],
+  "tertukar_dengan": []
+ },
+ "Ocimum Americanum (Selasih)": {
+  "ilmiah": "Ocimum Americanum",
+  "lokal": "Selasih",
+  "pangan": 1,
+  "obat": 1,
+  "beracun": 0,
+  "level_racun": 0,
+  "bagian_aman": "Daun dan batang, dimasak",
+  "bagian_bahaya": "-",
+  "catatan": "bumbu",
+  "p3k": [
+   "Basis pengetahuan tidak mencatat racun pada tanaman ini.",
+   "Hentikan pemakaian bila muncul gatal, ruam, bengkak, atau sesak napas (tanda alergi) dan periksakan diri bila tidak membaik."
+  ],
+  "tertukar_dengan": []
+ },
+ "Ocimum Basilicum (Kemangi)": {
+  "ilmiah": "Ocimum Basilicum",
+  "lokal": "Kemangi",
+  "pangan": 1,
+  "obat": 1,
+  "beracun": 0,
+  "level_racun": 0,
+  "bagian_aman": "daun",
+  "bagian_bahaya": "-",
+  "catatan": "lalapan",
+  "p3k": [
+   "Basis pengetahuan tidak mencatat racun pada tanaman ini.",
+   "Hentikan pemakaian bila muncul gatal, ruam, bengkak, atau sesak napas (tanda alergi) dan periksakan diri bila tidak membaik."
+  ],
+  "tertukar_dengan": [
+   {
+    "nama": "Cestrum Nocturnum (Sedap Malam)",
+    "keyakinan": 0.36
+   },
+   {
+    "nama": "Phytolacca Americana (Mrico Kepyar)",
+    "keyakinan": 0.27
+   }
+  ]
+ },
+ "Olea Europaea (Zaitun)": {
+  "ilmiah": "Olea Europaea",
+  "lokal": "Zaitun",
+  "pangan": 1,
+  "obat": 1,
+  "beracun": 0,
+  "level_racun": 0,
+  "bagian_aman": "buah, minyak",
+  "bagian_bahaya": "-",
+  "catatan": "pangan",
+  "p3k": [
+   "Basis pengetahuan tidak mencatat racun pada tanaman ini.",
+   "Hentikan pemakaian bila muncul gatal, ruam, bengkak, atau sesak napas (tanda alergi) dan periksakan diri bila tidak membaik."
+  ],
+  "tertukar_dengan": []
+ },
+ "Orthosiphon Spicatus (Kumis Kucing)": {
+  "ilmiah": "Orthosiphon Spicatus",
+  "lokal": "Kumis Kucing",
+  "pangan": 0,
+  "obat": 1,
+  "beracun": 0,
+  "level_racun": 0,
+  "bagian_aman": "-",
+  "bagian_bahaya": "-",
+  "catatan": "diuretik",
+  "p3k": [
+   "Basis pengetahuan tidak mencatat racun pada tanaman ini.",
+   "Hentikan pemakaian bila muncul gatal, ruam, bengkak, atau sesak napas (tanda alergi) dan periksakan diri bila tidak membaik."
+  ],
+  "tertukar_dengan": []
+ },
+ "Pandanus Amaryllifolius (Pandan)": {
+  "ilmiah": "Pandanus Amaryllifolius",
+  "lokal": "Pandan",
+  "pangan": 1,
+  "obat": 1,
+  "beracun": 0,
+  "level_racun": 0,
+  "bagian_aman": "daun (pewangi)",
+  "bagian_bahaya": "-",
+  "catatan": "bumbu",
+  "p3k": [
+   "Basis pengetahuan tidak mencatat racun pada tanaman ini.",
+   "Hentikan pemakaian bila muncul gatal, ruam, bengkak, atau sesak napas (tanda alergi) dan periksakan diri bila tidak membaik."
+  ],
+  "tertukar_dengan": []
+ },
+ "Parameria Laevigata (Kayu Rapet)": {
+  "ilmiah": "Parameria Laevigata",
+  "lokal": "Kayu Rapet",
+  "pangan": 0,
+  "obat": 1,
+  "beracun": 0,
+  "level_racun": 0,
+  "bagian_aman": "-",
+  "bagian_bahaya": "-",
+  "catatan": "obat pascapersalinan",
+  "p3k": [
+   "Basis pengetahuan tidak mencatat racun pada tanaman ini.",
+   "Hentikan pemakaian bila muncul gatal, ruam, bengkak, atau sesak napas (tanda alergi) dan periksakan diri bila tidak membaik."
+  ],
+  "tertukar_dengan": []
+ },
+ "Peperomia Pellucida (Suruhan)": {
+  "ilmiah": "Peperomia Pellucida",
+  "lokal": "Suruhan",
+  "pangan": 1,
+  "obat": 1,
+  "beracun": 0,
+  "level_racun": 0,
+  "bagian_aman": "daun",
+  "bagian_bahaya": "-",
+  "catatan": "lalapan",
+  "p3k": [
+   "Basis pengetahuan tidak mencatat racun pada tanaman ini.",
+   "Hentikan pemakaian bila muncul gatal, ruam, bengkak, atau sesak napas (tanda alergi) dan periksakan diri bila tidak membaik."
+  ],
+  "tertukar_dengan": []
+ },
+ "Phaleria Macrocarpa (Mahkota Dewa)": {
+  "ilmiah": "Phaleria Macrocarpa",
+  "lokal": "Mahkota Dewa",
+  "pangan": 0,
+  "obat": 1,
+  "beracun": 1,
+  "level_racun": 2,
+  "bagian_aman": "-",
+  "bagian_bahaya": "biji, buah mentah",
+  "catatan": "biji toksik; buah iritan mulut",
+  "p3k": [
+   "Jika tertelan: jangan memancing muntah. Kumur dengan air bersih, lalu segera ke fasilitas kesehatan terdekat atau hubungi 119.",
+   "Getah atau minyak mengenai kulit: cuci dengan sabun dan air mengalir minimal 15 menit, hindari sinar matahari langsung pada bagian itu.",
+   "Mengenai mata: bilas dengan air mengalir 15 menit tanpa dikucek, lalu periksakan ke dokter.",
+   "Bawa sampel atau foto tanaman saat ke fasilitas kesehatan."
+  ],
+  "tertukar_dengan": []
+ },
+ "Physalis Angulata (Ceplukan)": {
+  "ilmiah": "Physalis Angulata",
+  "lokal": "Ceplukan",
+  "pangan": 1,
+  "obat": 1,
+  "beracun": 0,
+  "level_racun": 0,
+  "bagian_aman": "buah matang",
+  "bagian_bahaya": "daun/buah mentah",
+  "catatan": "pangan",
+  "p3k": [
+   "Basis pengetahuan tidak mencatat racun pada tanaman ini.",
+   "Hentikan pemakaian bila muncul gatal, ruam, bengkak, atau sesak napas (tanda alergi) dan periksakan diri bila tidak membaik."
+  ],
+  "tertukar_dengan": []
+ },
+ "Phytolacca Americana (Mrico Kepyar)": {
+  "ilmiah": "Phytolacca Americana",
+  "lokal": "Mrico Kepyar",
+  "pangan": 0,
+  "obat": 0,
+  "beracun": 1,
+  "level_racun": 3,
+  "bagian_aman": "-",
+  "bagian_bahaya": "akar, buah, daun",
+  "catatan": "pokeweed; toksik",
+  "p3k": [
+   "Jika tertelan: jangan memancing muntah. Kumur dengan air bersih, lalu segera ke fasilitas kesehatan terdekat atau hubungi 119.",
+   "Bawa sampel atau foto tanaman saat ke fasilitas kesehatan."
+  ],
+  "tertukar_dengan": []
+ },
+ "Piper Betle (Sirih)": {
+  "ilmiah": "Piper Betle",
+  "lokal": "Sirih",
+  "pangan": 0,
+  "obat": 1,
+  "beracun": 0,
+  "level_racun": 0,
+  "bagian_aman": "-",
+  "bagian_bahaya": "-",
+  "catatan": "obat/nyirih",
+  "p3k": [
+   "Basis pengetahuan tidak mencatat racun pada tanaman ini.",
+   "Hentikan pemakaian bila muncul gatal, ruam, bengkak, atau sesak napas (tanda alergi) dan periksakan diri bila tidak membaik."
+  ],
+  "tertukar_dengan": []
+ },
+ "Piper Sarmentosum (Cabean)": {
+  "ilmiah": "Piper Sarmentosum",
+  "lokal": "Cabean",
+  "pangan": 1,
+  "obat": 1,
+  "beracun": 0,
+  "level_racun": 0,
+  "bagian_aman": "daun",
+  "bagian_bahaya": "-",
+  "catatan": "lalapan",
+  "p3k": [
+   "Basis pengetahuan tidak mencatat racun pada tanaman ini.",
+   "Hentikan pemakaian bila muncul gatal, ruam, bengkak, atau sesak napas (tanda alergi) dan periksakan diri bila tidak membaik."
+  ],
+  "tertukar_dengan": [
+   {
+    "nama": "Gynura Segetum (Daun Dewa)",
+    "keyakinan": 0.65
+   }
+  ]
+ },
+ "Plectranthus Scutellarioides (Miana)": {
+  "ilmiah": "Plectranthus Scutellarioides",
+  "lokal": "Miana",
+  "pangan": 0,
+  "obat": 1,
+  "beracun": 0,
+  "level_racun": 0,
+  "bagian_aman": "-",
+  "bagian_bahaya": "-",
+  "catatan": "ornamental/obat",
+  "p3k": [
+   "Basis pengetahuan tidak mencatat racun pada tanaman ini.",
+   "Hentikan pemakaian bila muncul gatal, ruam, bengkak, atau sesak napas (tanda alergi) dan periksakan diri bila tidak membaik."
+  ],
+  "tertukar_dengan": []
+ },
+ "Pleomele Angustifolia (Suji)": {
+  "ilmiah": "Pleomele Angustifolia",
+  "lokal": "Suji",
+  "pangan": 1,
+  "obat": 1,
+  "beracun": 0,
+  "level_racun": 0,
+  "bagian_aman": "daun (pewarna)",
+  "bagian_bahaya": "-",
+  "catatan": "pewarna makanan",
+  "p3k": [
+   "Basis pengetahuan tidak mencatat racun pada tanaman ini.",
+   "Hentikan pemakaian bila muncul gatal, ruam, bengkak, atau sesak napas (tanda alergi) dan periksakan diri bila tidak membaik."
+  ],
+  "tertukar_dengan": []
+ },
+ "Pluchea Indica (Beluntas)": {
+  "ilmiah": "Pluchea Indica",
+  "lokal": "Beluntas",
+  "pangan": 1,
+  "obat": 1,
+  "beracun": 0,
+  "level_racun": 0,
+  "bagian_aman": "daun",
+  "bagian_bahaya": "-",
+  "catatan": "lalapan",
+  "p3k": [
+   "Basis pengetahuan tidak mencatat racun pada tanaman ini.",
+   "Hentikan pemakaian bila muncul gatal, ruam, bengkak, atau sesak napas (tanda alergi) dan periksakan diri bila tidak membaik."
+  ],
+  "tertukar_dengan": [
+   {
+    "nama": "Gynura Segetum (Daun Dewa)",
+    "keyakinan": 0.57
+   }
+  ]
+ },
+ "Plumbago Zeylanica (Daun Encok)": {
+  "ilmiah": "Plumbago Zeylanica",
+  "lokal": "Daun Encok",
+  "pangan": 0,
+  "obat": 0,
+  "beracun": 1,
+  "level_racun": 2,
+  "bagian_aman": "-",
+  "bagian_bahaya": "akar, getah",
+  "catatan": "plumbagin; iritan kulit",
+  "p3k": [
+   "Jika tertelan: jangan memancing muntah. Kumur dengan air bersih, lalu segera ke fasilitas kesehatan terdekat atau hubungi 119.",
+   "Getah atau minyak mengenai kulit: cuci dengan sabun dan air mengalir minimal 15 menit, hindari sinar matahari langsung pada bagian itu.",
+   "Mengenai mata: bilas dengan air mengalir 15 menit tanpa dikucek, lalu periksakan ke dokter.",
+   "Bawa sampel atau foto tanaman saat ke fasilitas kesehatan."
+  ],
+  "tertukar_dengan": []
+ },
+ "Pogostemon Cablin (Nilam)": {
+  "ilmiah": "Pogostemon Cablin",
+  "lokal": "Nilam",
+  "pangan": 0,
+  "obat": 1,
+  "beracun": 0,
+  "level_racun": 0,
+  "bagian_aman": "-",
+  "bagian_bahaya": "-",
+  "catatan": "aromatik/parfum",
+  "p3k": [
+   "Basis pengetahuan tidak mencatat racun pada tanaman ini.",
+   "Hentikan pemakaian bila muncul gatal, ruam, bengkak, atau sesak napas (tanda alergi) dan periksakan diri bila tidak membaik."
+  ],
+  "tertukar_dengan": []
+ },
+ "Pouteria Caimito (Abiu)": {
+  "ilmiah": "Pouteria Caimito",
+  "lokal": "Abiu",
+  "pangan": 1,
+  "obat": 0,
+  "beracun": 0,
+  "level_racun": 0,
+  "bagian_aman": "buah",
+  "bagian_bahaya": "getah",
+  "catatan": "pangan",
+  "p3k": [
+   "Basis pengetahuan tidak mencatat racun pada tanaman ini.",
+   "Hentikan pemakaian bila muncul gatal, ruam, bengkak, atau sesak napas (tanda alergi) dan periksakan diri bila tidak membaik."
+  ],
+  "tertukar_dengan": []
+ },
+ "Prunus Domestica (Plum)": {
+  "ilmiah": "Prunus Domestica",
+  "lokal": "Plum",
+  "pangan": 1,
+  "obat": 1,
+  "beracun": 1,
+  "level_racun": 1,
+  "bagian_aman": "buah",
+  "bagian_bahaya": "biji (kernel)",
+  "catatan": "biji sianogenik",
+  "p3k": [
+   "Jika bagian berbahaya tertelan atau muncul mual, muntah, diare, atau pusing: hentikan konsumsi dan periksakan diri ke fasilitas kesehatan.",
+   "Bawa sampel atau foto tanaman saat ke fasilitas kesehatan."
+  ],
+  "tertukar_dengan": []
+ },
+ "Psidium Guajava (Jambu Biji)": {
+  "ilmiah": "Psidium Guajava",
+  "lokal": "Jambu Biji",
+  "pangan": 1,
+  "obat": 1,
+  "beracun": 0,
+  "level_racun": 0,
+  "bagian_aman": "buah, daun (teh)",
+  "bagian_bahaya": "-",
+  "catatan": "pangan",
+  "p3k": [
+   "Basis pengetahuan tidak mencatat racun pada tanaman ini.",
+   "Hentikan pemakaian bila muncul gatal, ruam, bengkak, atau sesak napas (tanda alergi) dan periksakan diri bila tidak membaik."
+  ],
+  "tertukar_dengan": []
+ },
+ "Pyrus Communis (Pir)": {
+  "ilmiah": "Pyrus Communis",
+  "lokal": "Pir",
+  "pangan": 1,
+  "obat": 1,
+  "beracun": 1,
+  "level_racun": 1,
+  "bagian_aman": "buah",
+  "bagian_bahaya": "biji",
+  "catatan": "biji sianogenik",
+  "p3k": [
+   "Jika bagian berbahaya tertelan atau muncul mual, muntah, diare, atau pusing: hentikan konsumsi dan periksakan diri ke fasilitas kesehatan.",
+   "Bawa sampel atau foto tanaman saat ke fasilitas kesehatan."
+  ],
+  "tertukar_dengan": []
+ },
+ "Raulvolvia Serpentina (Pule Pandak)": {
+  "ilmiah": "Raulvolvia Serpentina",
+  "lokal": "Pule Pandak",
+  "pangan": 0,
+  "obat": 1,
+  "beracun": 1,
+  "level_racun": 2,
+  "bagian_aman": "-",
+  "bagian_bahaya": "akar",
+  "catatan": "reserpin; obat resep",
+  "p3k": [
+   "Jika tertelan: jangan memancing muntah. Kumur dengan air bersih, lalu segera ke fasilitas kesehatan terdekat atau hubungi 119.",
+   "Bawa sampel atau foto tanaman saat ke fasilitas kesehatan."
+  ],
+  "tertukar_dengan": []
+ },
+ "Ricinus Communis (Jarak)": {
+  "ilmiah": "Ricinus Communis",
+  "lokal": "Jarak",
+  "pangan": 0,
+  "obat": 0,
+  "beracun": 1,
+  "level_racun": 3,
+  "bagian_aman": "-",
+  "bagian_bahaya": "biji",
+  "catatan": "risin; SANGAT toksik",
+  "p3k": [
+   "Jika tertelan: jangan memancing muntah. Kumur dengan air bersih, lalu segera ke fasilitas kesehatan terdekat atau hubungi 119.",
+   "Bawa sampel atau foto tanaman saat ke fasilitas kesehatan."
+  ],
+  "tertukar_dengan": []
+ },
+ "Rosmarinus Officinalis (Rosemary)": {
+  "ilmiah": "Rosmarinus Officinalis",
+  "lokal": "Rosemary",
+  "pangan": 1,
+  "obat": 1,
+  "beracun": 0,
+  "level_racun": 0,
+  "bagian_aman": "daun",
+  "bagian_bahaya": "-",
+  "catatan": "bumbu",
+  "p3k": [
+   "Basis pengetahuan tidak mencatat racun pada tanaman ini.",
+   "Hentikan pemakaian bila muncul gatal, ruam, bengkak, atau sesak napas (tanda alergi) dan periksakan diri bila tidak membaik."
+  ],
+  "tertukar_dengan": []
+ },
+ "Ruellia Tuberosa (Ceplikan)": {
+  "ilmiah": "Ruellia Tuberosa",
+  "lokal": "Ceplikan",
+  "pangan": 0,
+  "obat": 1,
+  "beracun": 0,
+  "level_racun": 0,
+  "bagian_aman": "-",
+  "bagian_bahaya": "-",
+  "catatan": "obat folk",
+  "p3k": [
+   "Basis pengetahuan tidak mencatat racun pada tanaman ini.",
+   "Hentikan pemakaian bila muncul gatal, ruam, bengkak, atau sesak napas (tanda alergi) dan periksakan diri bila tidak membaik."
+  ],
+  "tertukar_dengan": []
+ },
+ "Ruta Angustifolia (Inggu)": {
+  "ilmiah": "Ruta Angustifolia",
+  "lokal": "Inggu",
+  "pangan": 0,
+  "obat": 1,
+  "beracun": 1,
+  "level_racun": 2,
+  "bagian_aman": "-",
+  "bagian_bahaya": "daun, minyak",
+  "catatan": "abortifan; fototoksik",
+  "p3k": [
+   "Jika tertelan: jangan memancing muntah. Kumur dengan air bersih, lalu segera ke fasilitas kesehatan terdekat atau hubungi 119.",
+   "Getah atau minyak mengenai kulit: cuci dengan sabun dan air mengalir minimal 15 menit, hindari sinar matahari langsung pada bagian itu.",
+   "Mengenai mata: bilas dengan air mengalir 15 menit tanpa dikucek, lalu periksakan ke dokter.",
+   "Bawa sampel atau foto tanaman saat ke fasilitas kesehatan."
+  ],
+  "tertukar_dengan": []
+ },
+ "Selaginella Doederleinii (Paku Rane)": {
+  "ilmiah": "Selaginella Doederleinii",
+  "lokal": "Paku Rane",
+  "pangan": 0,
+  "obat": 1,
+  "beracun": 0,
+  "level_racun": 0,
+  "bagian_aman": "-",
+  "bagian_bahaya": "-",
+  "catatan": "obat folk",
+  "p3k": [
+   "Basis pengetahuan tidak mencatat racun pada tanaman ini.",
+   "Hentikan pemakaian bila muncul gatal, ruam, bengkak, atau sesak napas (tanda alergi) dan periksakan diri bila tidak membaik."
+  ],
+  "tertukar_dengan": []
+ },
+ "Syzygium Polyanthum (Salam)": {
+  "ilmiah": "Syzygium Polyanthum",
+  "lokal": "Salam",
+  "pangan": 1,
+  "obat": 1,
+  "beracun": 0,
+  "level_racun": 0,
+  "bagian_aman": "daun",
+  "bagian_bahaya": "-",
+  "catatan": "bumbu",
+  "p3k": [
+   "Basis pengetahuan tidak mencatat racun pada tanaman ini.",
+   "Hentikan pemakaian bila muncul gatal, ruam, bengkak, atau sesak napas (tanda alergi) dan periksakan diri bila tidak membaik."
+  ],
+  "tertukar_dengan": [
+   {
+    "nama": "Gynura Segetum (Daun Dewa)",
+    "keyakinan": 0.3
+   }
+  ]
+ },
+ "Talinum Triangulare (Som Jawa)": {
+  "ilmiah": "Talinum Triangulare",
+  "lokal": "Som Jawa",
+  "pangan": 1,
+  "obat": 1,
+  "beracun": 0,
+  "level_racun": 0,
+  "bagian_aman": "daun",
+  "bagian_bahaya": "-",
+  "catatan": "sayur",
+  "p3k": [
+   "Basis pengetahuan tidak mencatat racun pada tanaman ini.",
+   "Hentikan pemakaian bila muncul gatal, ruam, bengkak, atau sesak napas (tanda alergi) dan periksakan diri bila tidak membaik."
+  ],
+  "tertukar_dengan": []
+ },
+ "Tinospora Tuberculata (Brotowali)": {
+  "ilmiah": "Tinospora Tuberculata",
+  "lokal": "Brotowali",
+  "pangan": 0,
+  "obat": 1,
+  "beracun": 1,
+  "level_racun": 1,
+  "bagian_aman": "-",
+  "bagian_bahaya": "konsumsi berlebihan",
+  "catatan": "pahit; hati-hati",
+  "p3k": [
+   "Jika bagian berbahaya tertelan atau muncul mual, muntah, diare, atau pusing: hentikan konsumsi dan periksakan diri ke fasilitas kesehatan.",
+   "Bawa sampel atau foto tanaman saat ke fasilitas kesehatan."
+  ],
+  "tertukar_dengan": []
+ },
+ "Tithonia Diversifolia (Daun Insulin)": {
+  "ilmiah": "Tithonia Diversifolia",
+  "lokal": "Daun Insulin",
+  "pangan": 0,
+  "obat": 1,
+  "beracun": 0,
+  "level_racun": 0,
+  "bagian_aman": "-",
+  "bagian_bahaya": "-",
+  "catatan": "obat folk",
+  "p3k": [
+   "Basis pengetahuan tidak mencatat racun pada tanaman ini.",
+   "Hentikan pemakaian bila muncul gatal, ruam, bengkak, atau sesak napas (tanda alergi) dan periksakan diri bila tidak membaik."
+  ],
+  "tertukar_dengan": []
+ },
+ "Typhonium Flagelliforme (Keladi Tikus)": {
+  "ilmiah": "Typhonium Flagelliforme",
+  "lokal": "Keladi Tikus",
+  "pangan": 0,
+  "obat": 1,
+  "beracun": 1,
+  "level_racun": 2,
+  "bagian_aman": "-",
+  "bagian_bahaya": "umbi mentah",
+  "catatan": "oksalat; harus diolah",
+  "p3k": [
+   "Jika tertelan: jangan memancing muntah. Kumur dengan air bersih, lalu segera ke fasilitas kesehatan terdekat atau hubungi 119.",
+   "Rasa terbakar atau bengkak di mulut: kumur dan minum air dingin sedikit-sedikit. Bibir, lidah, atau tenggorokan membengkak atau sulit bernapas: segera ke IGD.",
+   "Bawa sampel atau foto tanaman saat ke fasilitas kesehatan."
+  ],
+  "tertukar_dengan": []
+ },
+ "Vetiveria Zizaniodes (Akar Wangi)": {
+  "ilmiah": "Vetiveria Zizaniodes",
+  "lokal": "Akar Wangi",
+  "pangan": 0,
+  "obat": 1,
+  "beracun": 0,
+  "level_racun": 0,
+  "bagian_aman": "-",
+  "bagian_bahaya": "-",
+  "catatan": "aromatik",
+  "p3k": [
+   "Basis pengetahuan tidak mencatat racun pada tanaman ini.",
+   "Hentikan pemakaian bila muncul gatal, ruam, bengkak, atau sesak napas (tanda alergi) dan periksakan diri bila tidak membaik."
+  ],
+  "tertukar_dengan": []
+ },
+ "Vitex Trifolia (Legundi)": {
+  "ilmiah": "Vitex Trifolia",
+  "lokal": "Legundi",
+  "pangan": 0,
+  "obat": 1,
+  "beracun": 0,
+  "level_racun": 0,
+  "bagian_aman": "-",
+  "bagian_bahaya": "-",
+  "catatan": "obat folk",
+  "p3k": [
+   "Basis pengetahuan tidak mencatat racun pada tanaman ini.",
+   "Hentikan pemakaian bila muncul gatal, ruam, bengkak, atau sesak napas (tanda alergi) dan periksakan diri bila tidak membaik."
+  ],
+  "tertukar_dengan": []
+ },
+ "Zephyranthes Candida (Lili Hujan Putih)": {
+  "ilmiah": "Zephyranthes Candida",
+  "lokal": "Lili Hujan Putih",
+  "pangan": 0,
+  "obat": 0,
+  "beracun": 1,
+  "level_racun": 3,
+  "bagian_aman": "-",
+  "bagian_bahaya": "seluruh bagian",
+  "catatan": "likorin; ornamental",
+  "p3k": [
+   "Jika tertelan: jangan memancing muntah. Kumur dengan air bersih, lalu segera ke fasilitas kesehatan terdekat atau hubungi 119.",
+   "Bawa sampel atau foto tanaman saat ke fasilitas kesehatan."
+  ],
+  "tertukar_dengan": []
+ },
+ "Zingiber Officinale (Jahe)": {
+  "ilmiah": "Zingiber Officinale",
+  "lokal": "Jahe",
+  "pangan": 1,
+  "obat": 1,
+  "beracun": 0,
+  "level_racun": 0,
+  "bagian_aman": "rimpang",
+  "bagian_bahaya": "-",
+  "catatan": "bumbu",
+  "p3k": [
+   "Basis pengetahuan tidak mencatat racun pada tanaman ini.",
+   "Hentikan pemakaian bila muncul gatal, ruam, bengkak, atau sesak napas (tanda alergi) dan periksakan diri bila tidak membaik."
+  ],
+  "tertukar_dengan": [
+   {
+    "nama": "Acorus Calamus (Dlingo)",
+    "keyakinan": 0.56
+   },
+   {
+    "nama": "Melia Azedarach (Mindi)",
+    "keyakinan": 0.37
+   }
+  ]
+ },
+ "Zingiber Zerumbet (Lempuyang Gajah)": {
+  "ilmiah": "Zingiber Zerumbet",
+  "lokal": "Lempuyang Gajah",
+  "pangan": 0,
+  "obat": 1,
+  "beracun": 0,
+  "level_racun": 0,
+  "bagian_aman": "-",
+  "bagian_bahaya": "-",
+  "catatan": "obat; rimpang pahit",
+  "p3k": [
+   "Basis pengetahuan tidak mencatat racun pada tanaman ini.",
+   "Hentikan pemakaian bila muncul gatal, ruam, bengkak, atau sesak napas (tanda alergi) dan periksakan diri bila tidak membaik."
+  ],
+  "tertukar_dengan": []
+ }
+}

@@ -36,7 +36,7 @@ Angka dalam tabel dihitung pada 1.476 foto uji sebelum aturan penolakan diterapk
 | [`tanaman-obat/scripts/`](tanaman-obat/scripts/) | Skrip persiapan data, pelatihan, evaluasi, dan ekspor model |
 | [`tanaman-obat/output/`](tanaman-obat/output/) | Notebook, laporan evaluasi, grafik, dan hasil eksperimen |
 | [`tanaman-obat/output/05_bahan_aplikasi/`](tanaman-obat/output/05_bahan_aplikasi/) | Model TFLite, label, spesifikasi input dan output, serta aturan penolakan |
-| `herbanusa/` | Kode aplikasi Flutter, aset, dan tes |
+| `HerbaNusa/` | Kode aplikasi Flutter, aset, dan tes |
 
 ## Menjalankan proyek
 
@@ -45,12 +45,12 @@ Angka dalam tabel dihitung pada 1.476 foto uji sebelum aturan penolakan diterapk
 Siapkan Flutter SDK, Android SDK, serta emulator atau perangkat Android. Jalankan perintah berikut dari folder utama proyek.
 
 ```sh
-cd herbanusa
+cd HerbaNusa
 flutter pub get
 flutter run
 ```
 
-Gunakan `flutter test` untuk menjalankan tes atau `flutter build apk --release` untuk membuat APK rilis. Model dan aset tersedia di `herbanusa/assets/`, sehingga aplikasi dapat dijalankan tanpa melatih ulang model.
+Gunakan `flutter test` untuk menjalankan tes atau `flutter build apk --release` untuk membuat APK rilis. Model dan aset tersedia di `HerbaNusa/assets/`, sehingga aplikasi dapat dijalankan tanpa melatih ulang model.
 
 ### Pipeline machine learning
 
