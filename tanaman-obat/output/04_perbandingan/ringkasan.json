@@ -1,0 +1,38 @@
+{
+  "tabel": [
+    {
+      "model": "CNN MobileNetV2",
+      "top1": 0.8915989159891599,
+      "top3": 0.9525745257452575,
+      "macro_f1": 0.8881037754469885,
+      "recall_beracun": 0.9234234234234234,
+      "fatal_rate": 0.04279279279279279,
+      "fatal_n": 19,
+      "false_alarm_beracun": 0.13925729442970822,
+      "akurasi_pada_cakupan": 0.9274310595065312
+    },
+    {
+      "model": "SVM RBF",
+      "top1": 0.8990514905149052,
+      "top3": 0.9566395663956639,
+      "macro_f1": 0.8965952161531122,
+      "recall_beracun": 0.9279279279279279,
+      "fatal_rate": 0.036036036036036036,
+      "fatal_n": 16,
+      "false_alarm_beracun": 0.13660477453580902,
+      "akurasi_pada_cakupan": 0.9056603773584906
+    },
+    {
+      "model": "Random Forest 300",
+      "top1": 0.8719512195121951,
+      "top3": 0.9532520325203252,
+      "macro_f1": 0.8659872530292073,
+      "recall_beracun": 0.9166666666666666,
+      "fatal_rate": 0.04279279279279279,
+      "fatal_n": 19,
+      "false_alarm_beracun": 0.1419098143236074,
+      "akurasi_pada_cakupan": 0.9071117561683599
+    }
+  ],
+  "pemenang": "SVM RBF"
+}

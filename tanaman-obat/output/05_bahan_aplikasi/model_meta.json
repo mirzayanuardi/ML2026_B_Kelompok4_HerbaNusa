@@ -1,0 +1,33 @@
+{
+  "input": {
+    "shape": [
+      1,
+      224,
+      224,
+      3
+    ],
+    "dtype": "float32",
+    "range": "0..255 (jangan dinormalisasi lagi, preprocessing ada di dalam model)",
+    "color": "RGB"
+  },
+  "output": {
+    "shape": [
+      1,
+      100
+    ],
+    "dtype": "float32",
+    "activation": "softmax",
+    "meaning": "probabilitas per kelas, urutan sesuai labels.json"
+  },
+  "quantization": "float16 weights",
+  "size_mb": 4.56,
+  "verification": {
+    "n_images": 200,
+    "argmax_agreement": 1.0,
+    "max_abs_diff": 0.024695634841918945,
+    "mean_abs_diff": 8.222190081141889e-05,
+    "acc_keras_subset": 0.9,
+    "acc_tflite_subset": 0.9
+  },
+  "labels_count": 100
+}

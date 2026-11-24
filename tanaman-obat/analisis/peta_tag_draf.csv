@@ -1,0 +1,101 @@
+folder,pangan,obat,beracun,bagian_aman,bagian_bahaya,catatan
+Abelmoschus Esculentus (Okra),1,1,0,buah muda,-,sayur umum
+Acorus Calamus (Dlingo),0,1,1,-,rimpang dosis besar,beta-asarone; dibatasi BPOM
+Aloe Vera (Lidah Buaya),1,1,1,gel bening,lateks kuning (aloin),lateks = pencahar kuat
+Alstonia Scholaris (Pulai),0,1,1,-,"getah, kulit",alkaloid; bukan untuk ibu hamil
+Amaranthus Spinosus (Bayam Duri),1,1,0,daun muda,duri,sayur
+Andrographis Paniculata (Sambiloto),0,1,0,-,-,sangat pahit; dosis hati-hati
+Annona Muricata (Sirsak),1,1,1,buah,"biji, daun dosis besar",biji mengandung annonacin
+Annona Squamosa (Srikaya),1,1,1,buah,biji,biji toksik
+Anredera Cordifolia (Binahong),1,1,0,daun,-,lalapan/obat luka
+Apium Graveolens (Seledri),1,1,0,"batang, daun",-,sayur
+Artocarpus Heterophyllus (Nangka Mini),1,0,0,"buah, biji (direbus)",getah,pangan
+Artocarpus Integer (Nangka Cempedak),1,0,0,"buah, biji",getah,pangan
+Averrhoa Bilimbi (Belimbing Wuluh),1,1,1,buah,buah mentah banyak,oksalat tinggi; batu ginjal
+Blumea Balsamifera (Sembung),0,1,0,-,-,obat tradisional
+Borreria Hispida (Gempur Batu),0,1,0,-,-,obat batu ginjal (folk)
+Caesalpinia Sappan L (Secang),1,1,0,kayu (rebusan),-,minuman rempah
+Caladium Cicolor (Keladi),0,0,1,-,seluruh bagian,oksalat kalsium; SANGAT mirip talas
+Calendula Officinalis (Marigold),1,1,0,kelopak bunga,-,teh/bunga edible
+Canangium Odoratum (Kenanga),0,1,0,-,-,aromatik
+Catharanthus Roseus (Tapak Dara),0,1,1,-,seluruh bagian,alkaloid vinka; obat kanker resep
+Celosia Cristata (Jengger Ayam),1,1,0,daun muda,-,bunga ornamental
+Centella Asiatica (Pegagan),1,1,0,daun,-,lalapan + obat
+Cestrum Nocturnum (Sedap Malam),0,0,1,-,seluruh bagian,Solanaceae toksik
+Citrus Amblycarpa (Jeruk Limau),1,1,0,buah,-,bumbu
+Clinalanthus Nutans (Dandang Gendis),0,1,0,-,-,obat folk
+Clitoria Ternatea (Kembang Telang),1,1,0,bunga,-,teh biru
+Crinum Asiaticum (Bakung Putih),0,0,1,-,seluruh bagian,alkaloid; ornamental
+Curcuma Domestica (Kunyit),1,1,0,rimpang,-,bumbu + jamu
+Cyclea Barbata (Cincau Hijau),1,1,0,daun (gel),-,pangan
+Cymbopogon Nardus (Serai),1,1,0,batang (sedikit),-,serai wangi; beda dgn C. citratus
+Derris Elliptica (Tuba),0,0,1,-,akar,rotenon; racun ikan
+Desmodium Triquitrum (Daun Duduk),0,1,0,-,-,obat folk
+Dioscorea Hispida (Gadung),1,0,1,umbi SETELAH proses panjang,umbi mentah,dioscorin; salah proses = keracunan
+Eleutherine Americana (Bawang Dayak),0,1,0,-,-,obat folk
+Euodia Suaveolens (Zodia),0,1,0,-,-,pengusir nyamuk
+Eupatorium Triplinerve (Prasman),0,1,0,-,-,obat folk
+Euphorbia Tirucalli (Patah Tulang),0,0,1,-,getah,getah iritan; karsinogen promotor
+Euphoria Longan (Kelengkeng),1,0,0,buah,biji,biji tidak dimakan
+Ficus Carica (Tin),1,0,0,buah,getah,pangan
+Ficus Septica (Awar-Awar),0,1,0,-,getah,obat folk
+Graptophyllum Pictum (Daun Ungu),0,1,0,-,-,obat luka
+Gynura Segetum (Daun Dewa),0,1,1,-,konsumsi rutin,alkaloid pirolizidin; hepatotoksik
+Hibiscus Rosa-sinensis (Kembang Sepatu),1,1,0,bunga,-,teh/ornamental
+Hibiscus Sabdariffa (Rosela),1,1,0,kelopak,-,teh
+Houttoynia Cordata (Amis-Amisan),1,1,0,daun,-,lalapan
+Hydrocotyle Sibthorpioides (Semanggi Gunung),1,1,0,daun,-,lalapan; mirip pegagan
+Impatiens Balsamina (Pacar Air),0,1,0,-,biji,ornamental
+Isotoma Longiflora (Ki Tolod),0,1,1,-,getah,toksik; obat folk berisiko
+Jasminum Sambac (Melati),1,1,0,bunga (teh),-,aromatik
+Jatropa Multifida (Betadin),0,0,1,-,"getah, biji",toksik; ornamental
+Kaempferia Galanga (Kencur),1,1,0,rimpang,-,bumbu + jamu
+Melaleuca Leucadendra (Kayu Putih),0,1,1,-,minyak murni (internal),minyak kayu putih tidak untuk ditelan
+Melia Azedarach (Mindi),0,0,1,-,"biji, daun",neurotoksik
+Melissa officinalis (Lemon Balm),1,1,0,daun,-,teh
+Merremia Mammosa (Bidara),0,1,0,-,-,obat folk
+Michelia Alba (Kembang Kantil),0,1,0,-,-,aromatik
+Mirabilis Jalapa (Bunga Pukul Empat),0,1,1,-,"biji, akar",purgatif; ornamental
+Morinda Citrifolia (Mengkudu),1,1,0,buah,-,pangan olahan
+Morus Alba (Murbei),1,1,0,"buah, daun (teh)",-,pangan
+Muraya Paniculata (Kemuning),0,1,0,-,buah,obat; buah tidak dimakan
+Murraya Koenigii (Daun Kari),1,1,0,daun,-,bumbu
+Nepeta Cataria (Catnip),1,1,0,daun (teh),-,teh
+Nothopanax Scutellarium (Mangkokan),1,1,0,daun,-,lalapan
+Ocimum Americanum (Selasih),1,1,0,"daun, biji",-,bumbu
+Ocimum Basilicum (Kemangi),1,1,0,daun,-,lalapan
+Olea Europaea (Zaitun),1,1,0,"buah, minyak",-,pangan
+Orthosiphon Spicatus (Kumis Kucing),0,1,0,-,-,diuretik
+Pandanus Amaryllifolius (Pandan),1,1,0,daun (pewangi),-,bumbu
+Parameria Laevigata (Kayu Rapet),0,1,0,-,-,obat pascapersalinan
+Peperomia Pellucida (Suruhan),1,1,0,daun,-,lalapan
+Phaleria Macrocarpa (Mahkota Dewa),0,1,1,-,"biji, buah mentah",biji toksik; buah iritan mulut
+Physalis Angulata (Ceplukan),1,1,0,buah matang,daun/buah mentah,pangan
+Phytolacca Americana (Mrico Kepyar),0,0,1,-,"akar, buah, daun",pokeweed; toksik
+Piper Betle (Sirih),0,1,0,-,-,obat/nyirih
+Piper Sarmentosum (Cabean),1,1,0,daun,-,lalapan
+Plectranthus Scutellarioides (Miana),0,1,0,-,-,ornamental/obat
+Pleomele Angustifolia (Suji),1,1,0,daun (pewarna),-,pewarna makanan
+Pluchea Indica (Beluntas),1,1,0,daun,-,lalapan
+Plumbago Zeylanica (Daun Encok),0,0,1,-,"akar, getah",plumbagin; iritan kulit
+Pogostemon Cablin (Nilam),0,1,0,-,-,aromatik/parfum
+Pouteria Caimito (Abiu),1,0,0,buah,getah,pangan
+Prunus Domestica (Plum),1,1,1,buah,biji (kernel),biji sianogenik
+Psidium Guajava (Jambu Biji),1,1,0,"buah, daun (teh)",-,pangan
+Pyrus Communis (Pir),1,1,1,buah,biji,biji sianogenik
+Raulvolvia Serpentina (Pule Pandak),0,1,1,-,akar,reserpin; obat resep
+Ricinus Communis (Jarak),0,0,1,-,biji,risin; SANGAT toksik
+Rosmarinus Officinalis (Rosemary),1,1,0,daun,-,bumbu
+Ruellia Tuberosa (Ceplikan),0,1,0,-,-,obat folk
+Ruta Angustifolia (Inggu),0,1,1,-,"daun, minyak",abortifan; fototoksik
+Selaginella Doederleinii (Paku Rane),0,1,0,-,-,obat folk
+Syzygium Polyanthum (Salam),1,1,0,daun,-,bumbu
+Talinum Triangulare (Som Jawa),1,1,0,daun,-,sayur
+Tinospora Tuberculata (Brotowali),0,1,1,-,konsumsi berlebihan,pahit; hati-hati
+Tithonia Diversifolia (Daun Insulin),0,1,0,-,-,obat folk
+Typhonium Flagelliforme (Keladi Tikus),0,1,1,-,umbi mentah,oksalat; harus diolah
+Vetiveria Zizaniodes (Akar Wangi),0,1,0,-,-,aromatik
+Vitex Trifolia (Legundi),0,1,0,-,-,obat folk
+Zephyranthes Candida (Lili Hujan Putih),0,0,1,-,seluruh bagian,likorin; ornamental
+Zingiber Officinale (Jahe),1,1,0,rimpang,-,bumbu
+Zingiber Zerumbet (Lempuyang Gajah),0,1,0,-,-,obat; rimpang pahit

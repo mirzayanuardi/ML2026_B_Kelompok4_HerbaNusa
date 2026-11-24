@@ -1,0 +1,18 @@
+{
+  "top1": 0.8373983739837398,
+  "top3": 0.9220867208672087,
+  "views": [
+    "asli",
+    "flip",
+    "zoom90",
+    "zoom80",
+    "flip_zoom90"
+  ],
+  "n_test": 1476,
+  "n_test_beracun": 444,
+  "recall_beracun_sebagai_beracun": 0.9121621621621622,
+  "fatal_n": 24,
+  "fatal_rate": 0.05405405405405406,
+  "recall_pangan": 0.916445623342175,
+  "alarm_palsu_beracun_pada_pangan": 0.17374005305039789
+}

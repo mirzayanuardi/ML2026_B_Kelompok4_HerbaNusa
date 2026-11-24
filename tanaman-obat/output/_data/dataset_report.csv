@@ -1,0 +1,9 @@
+item,nilai
+file awal,10000
+duplikat persis dibuang,69
+near-duplicate dibuang,92
+file bersih,9839
+train,6887
+val,1476
+test,1476
+kelas,100

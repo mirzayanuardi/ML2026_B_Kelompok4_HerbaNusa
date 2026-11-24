@@ -1,0 +1,32 @@
+{
+  "ambang_keyakinan": 0.27,
+  "aturan": "tolak menjawab jika probabilitas tertinggi < ambang_keyakinan",
+  "dasar_penentuan": "ambang terendah yang memberi akurasi >= 93% pada foto yang dijawab",
+  "dipilih_dari": "data validasi (1.476 gambar), bukan data test",
+  "target_akurasi_pada_yang_dijawab": 0.93,
+  "cakupan_minimum": 0.4,
+  "validasi": {
+    "ambang": 0.27,
+    "n_dijawab": 1388.0,
+    "cakupan": 0.9404,
+    "akurasi": 0.9301
+  },
+  "test_pada_ambang_ini": {
+    "n_test": 1476,
+    "cakupan": 0.9336,
+    "akurasi_pada_yang_dijawab": 0.9274,
+    "akurasi_tanpa_penolakan": 0.8916,
+    "fatal_n": 9,
+    "fatal_rate_pada_beracun_yang_dijawab": 0.022,
+    "beracun_dijawab": 410
+  },
+  "aturan_margin": {
+    "dipakai": false,
+    "alasan": "sudah diuji pada model ini: aturan margin tidak mengubah cakupan maupun akurasi"
+  },
+  "larangan": [
+    "jangan menurunkan ambang agar pengguna tidak kecewa",
+    "jangan memakai satu jawaban saja; selalu tampilkan top-3",
+    "jika salah satu dari top-3 punya level_racun >= 2, tampilkan peringatan merah"
+  ]
+}

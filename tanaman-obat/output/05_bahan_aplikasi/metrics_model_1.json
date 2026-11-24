@@ -1,0 +1,15 @@
+{
+  "model": "CNN MobileNetV2",
+  "img": 224,
+  "n_params": 2386084,
+  "top1": 0.8915989159891599,
+  "top3": 0.9525745257452575,
+  "macro_f1": 0.8881037754469885,
+  "n_test": 1476,
+  "n_test_beracun": 444,
+  "recall_beracun_sebagai_beracun": 0.9234234234234234,
+  "fatal_n": 19,
+  "fatal_rate": 0.04279279279279279,
+  "recall_pangan": 0.9628647214854111,
+  "alarm_palsu_beracun_pada_pangan": 0.13925729442970822
+}
