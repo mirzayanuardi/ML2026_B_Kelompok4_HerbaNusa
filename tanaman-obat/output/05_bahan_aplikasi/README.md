@@ -1,4 +1,4 @@
-# FloraSurvival AI — Paket Serah Terima ke Pengembang Aplikasi
+# HerbaNusa — Paket Serah Terima ke Pengembang Aplikasi
 
 Dokumen ini untuk **pengembang aplikasi** (Flutter/Android). Isinya: apa yang
 sudah jadi dari sisi machine learning, cara memakainya, dan aturan keselamatan
@@ -211,4 +211,4 @@ kolom "Model bisa menjawab", tampilkan baris tambahan
 ## 7. Yang perlu ditanyakan ke tim ML
 
 - Isi `knowledge_base.json` (100 entri) dan `danger_list.json`
-- Hasil evaluasi lengkap: `metrics_model_1.json` dan notebook `FloraSurvival_ML.ipynb`
+- Hasil evaluasi lengkap: `metrics_model_1.json` dan notebook `HerbaNusa_ML.ipynb`

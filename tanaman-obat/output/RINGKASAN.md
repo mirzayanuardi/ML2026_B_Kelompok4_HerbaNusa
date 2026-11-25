@@ -1,4 +1,4 @@
-# Laporan FloraSurvival AI — Tahap 0–6 (ML Inti)
+# Laporan HerbaNusa — Tahap 0–6 (ML Inti)
 
 Dibuat: 11 November 2026, dini hari. Semua angka di bawah berasal dari file di
 folder ini, bukan perkiraan. Data test **tidak pernah** dipakai saat training
@@ -275,7 +275,7 @@ paket ini sudah utuh dan bisa dipertanggungjawabkan.
 | `03_rf/` | Random Forest, metrik, grafik |
 | `04_perbandingan/` | `tabel_model.csv`, `kesalahan_fatal.csv`, 3 grafik |
 | `05_bahan_aplikasi/` | **Yang diserahkan ke teman Anda**: `model.tflite`, `labels.json`, `model_meta.json`, `safety_rules.json`, `README.md` |
-| `FloraSurvival_ML.ipynb` | Notebook tunggal: seluruh pipeline tahap 0–6, **sudah dieksekusi** |
+| `HerbaNusa_ML.ipynb` | Notebook tunggal: seluruh pipeline tahap 0–6, **sudah dieksekusi** |
 
 Grafik penting: `01_cnn/figures/kurva_training.png`,
 `01_cnn/figures/confusion_matrix.png`, `01_cnn/figures/kurva_abstain.png`,

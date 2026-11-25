@@ -1,4 +1,4 @@
-# FloraSurvival AI — Penjelasan Proyek
+# HerbaNusa — Penjelasan Proyek
 
 Dokumen ini menjelaskan proyek dari nol: kenapa dibuat, datanya apa, tiga
 algoritma yang dipakai dan bagaimana masing-masing bekerja, sampai kenapa
@@ -655,7 +655,7 @@ tugas/portofolio, paket ini sudah utuh dan bisa dipertanggungjawabkan.
 | `03_rf/` | Random Forest, metrik, grafik |
 | `04_perbandingan/` | `tabel_model.csv`, `kesalahan_fatal.csv`, 3 grafik |
 | `05_bahan_aplikasi/` | **yang diserahkan**: `model.tflite`, `labels.json`, `model_meta.json`, `safety_rules.json`, `README.md` |
-| `FloraSurvival_ML.ipynb` | seluruh pipeline dalam satu notebook, sudah dieksekusi |
+| `HerbaNusa_ML.ipynb` | seluruh pipeline dalam satu notebook, sudah dieksekusi |
 | `RINGKASAN.md` | laporan lengkap dengan semua angka |
 | `PENJELASAN_PROYEK.md` | dokumen ini |
 

@@ -1,4 +1,4 @@
-# FloraSurvival AI — ML Inti (Tahap 0–6)
+# HerbaNusa — ML Inti (Tahap 0–6)
 
 Output pipeline machine learning untuk klasifikasi 100 spesies tanaman obat
 Indonesia. Berhenti tepat di export TFLite, sesuai lingkup yang diminta.
@@ -9,7 +9,7 @@ Indonesia. Berhenti tepat di export TFLite, sesuai lingkup yang diminta.
 |---|---|---|
 | 1 | `RINGKASAN.md` | Anda — laporan lengkap: semua angka, keputusan, dan batasan |
 | 2 | `PENJELASAN_PROYEK.md` | Anda/penguji — penjelasan proyek dari nol: latar belakang, dataset, ketiga algoritma, dan alasannya |
-| 3 | `FloraSurvival_ML.ipynb` | Anda — seluruh pipeline; grafik dan tabel tampil langsung di dalamnya |
+| 3 | `HerbaNusa_ML.ipynb` | Anda — seluruh pipeline; grafik dan tabel tampil langsung di dalamnya |
 | 4 | `05_bahan_aplikasi/README.md` | **Pengembang aplikasi** — kontrak input, aturan penolakan, matriks badge, checklist uji |
 
 ## Yang diserahkan ke teman Anda
@@ -56,10 +56,10 @@ $s  = "C:\Users\Wahyu Pratomo\Project Machine Learning\tanaman-obat\scripts"
 & $py $s\05_export_tflite.py    # 12 menit (verifikasi 200 gambar)
 & $py $s\06_threshold.py        # tentukan AMBANG dari validasi
 & $py $s\06b_svm_deploy.py      # hitung biaya deploy SVM
-& $py $s\build_notebooks.py     # bangun ulang output/FloraSurvival_ML.ipynb (belum dieksekusi)
+& $py $s\build_notebooks.py     # bangun ulang output/HerbaNusa_ML.ipynb (belum dieksekusi)
 cd output
 & $py -m jupyter nbconvert --to notebook --execute --inplace `
-      --ExecutePreprocessor.timeout=10800 FloraSurvival_ML.ipynb
+      --ExecutePreprocessor.timeout=10800 HerbaNusa_ML.ipynb
 ```
 
 `build_notebooks.py` hanya merakit notebook dari script; menjalankannya butuh
@@ -95,7 +95,7 @@ Percobaan pembanding (tidak perlu dijalankan ulang):
 | `03_rf/` | Random Forest |
 | `04_perbandingan/` | tabel + grafik perbandingan |
 | `05_bahan_aplikasi/` | **paket serah terima** |
-| `FloraSurvival_ML.ipynb` | Notebook tunggal seluruh pipeline, sudah dieksekusi |
+| `HerbaNusa_ML.ipynb` | Notebook tunggal seluruh pipeline, sudah dieksekusi |
 
 ## Lingkungan
 
