@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'dart:io';
 import 'dart:math' as math;
 
@@ -15,7 +16,13 @@ String _pct(double value) =>
     '${(value * 100).toStringAsFixed(value >= 0.995 ? 0 : 1)}%';
 
 class ResultScreen extends StatefulWidget {
-  const ResultScreen({super.key, required this.imagePath});
+  const ResultScreen({
+    super.key,
+    required this.imagePath,
+    required this.onHistorySaved,
+  });
+
+  final VoidCallback onHistorySaved;
 
   final String imagePath;
 
@@ -25,22 +32,50 @@ class ResultScreen extends StatefulWidget {
 
 class _ResultScreenState extends State<ResultScreen> {
   Future<Analysis?>? _analysis;
-  bool _saved = false;
 
   @override
   void didChangeDependencies() {
     super.didChangeDependencies();
-    _analysis ??= AppServices.of(context).classifier.analyze(widget.imagePath);
+    _analysis ??= _analyze(
+      AppServices.of(context),
+      widget.imagePath,
+      widget.onHistorySaved,
+    );
   }
 
-  void _saveOnce(Analysis analysis) {
-    if (_saved) return;
-    _saved = true;
-    AppServices.of(context).history.add(
-      sourcePath: widget.imagePath,
-      species: analysis.best.name,
-      probability: analysis.best.probability,
-    );
+  Future<Analysis?> _analyze(
+    AppServices services,
+    String imagePath,
+    VoidCallback onHistorySaved,
+  ) async {
+    final analysis = await services.classifier.analyze(imagePath);
+    if (analysis != null && !analysis.rejected) {
+      unawaited(_saveHistory(services, imagePath, analysis, onHistorySaved));
+    }
+    return analysis;
+  }
+
+  Future<void> _saveHistory(
+    AppServices services,
+    String imagePath,
+    Analysis analysis,
+    VoidCallback onHistorySaved,
+  ) async {
+    try {
+      await services.history.add(
+        sourcePath: imagePath,
+        species: analysis.best.name,
+        probability: analysis.best.probability,
+      );
+    } catch (_) {
+      if (mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          const SnackBar(content: Text('Hasil gagal disimpan ke riwayat.')),
+        );
+      }
+      return;
+    }
+    onHistorySaved();
   }
 
   @override
@@ -60,7 +95,6 @@ class _ResultScreenState extends State<ResultScreen> {
                   final failed =
                       !loading && (snapshot.hasError || analysis == null);
                   final accepted = analysis != null && !analysis.rejected;
-                  if (accepted) _saveOnce(analysis);
 
                   return ListView(
                     padding: const EdgeInsets.fromLTRB(20, 8, 20, 24),

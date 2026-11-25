@@ -165,7 +165,9 @@ class _ShellState extends State<_Shell> {
     (await SharedPreferences.getInstance()).setBool(_onboardedKey, true);
   }
 
-  void _historyChanged() => setState(() => _historyVersion++);
+  void _historyChanged() {
+    if (mounted) setState(() => _historyVersion++);
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -180,7 +182,7 @@ class _ShellState extends State<_Shell> {
             onSelectTab: (tab) => setState(() => _tab = tab),
           ),
           const EncyclopediaScreen(),
-          IdentifyScreen(onAnalyzed: _historyChanged),
+          IdentifyScreen(onHistorySaved: _historyChanged),
           HistoryScreen(
             historyVersion: _historyVersion,
             onChanged: _historyChanged,

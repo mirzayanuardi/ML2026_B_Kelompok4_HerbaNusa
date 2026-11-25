@@ -41,10 +41,10 @@ Future<String?> pickPhoto(BuildContext context, ImageSource source) async {
 
 /// Identifikasi, step 1 of 2: choose a photo.
 class IdentifyScreen extends StatefulWidget {
-  const IdentifyScreen({super.key, required this.onAnalyzed});
+  const IdentifyScreen({super.key, required this.onHistorySaved});
 
-  /// Called after the user leaves a result, so counts and history refresh.
-  final VoidCallback onAnalyzed;
+  /// Called when an accepted result has been saved to history.
+  final VoidCallback onHistorySaved;
 
   @override
   State<IdentifyScreen> createState() => _IdentifyScreenState();
@@ -82,9 +82,13 @@ class _IdentifyScreenState extends State<IdentifyScreen> {
 
   Future<void> _preview(String path) async {
     await Navigator.of(context).push(
-      MaterialPageRoute<void>(builder: (_) => PreviewScreen(imagePath: path)),
+      MaterialPageRoute<void>(
+        builder: (_) => PreviewScreen(
+          imagePath: path,
+          onHistorySaved: widget.onHistorySaved,
+        ),
+      ),
     );
-    widget.onAnalyzed();
   }
 
   @override
@@ -297,7 +301,13 @@ class _Tip extends StatelessWidget {
 
 /// Identifikasi, step 2 of 2: confirm the photo before running the model.
 class PreviewScreen extends StatefulWidget {
-  const PreviewScreen({super.key, required this.imagePath});
+  const PreviewScreen({
+    super.key,
+    required this.imagePath,
+    required this.onHistorySaved,
+  });
+
+  final VoidCallback onHistorySaved;
 
   final String imagePath;
 
@@ -365,11 +375,7 @@ class _PreviewScreenState extends State<PreviewScreen> {
                         CircleAvatar(
                           radius: 14,
                           backgroundColor: success,
-                          child: Icon(
-                            Icons.eco,
-                            size: 14,
-                            color: Colors.white,
-                          ),
+                          child: Icon(Icons.eco, size: 14, color: Colors.white),
                         ),
                         SizedBox(width: 10),
                         Expanded(
@@ -411,7 +417,10 @@ class _PreviewScreenState extends State<PreviewScreen> {
                       key: const Key('identify_button'),
                       onPressed: () => Navigator.of(context).pushReplacement(
                         MaterialPageRoute<void>(
-                          builder: (_) => ResultScreen(imagePath: _path),
+                          builder: (_) => ResultScreen(
+                            imagePath: _path,
+                            onHistorySaved: widget.onHistorySaved,
+                          ),
                         ),
                       ),
                       icon: const Icon(Icons.auto_awesome, size: 20),

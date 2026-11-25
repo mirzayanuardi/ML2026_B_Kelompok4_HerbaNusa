@@ -1,8 +1,13 @@
+import 'dart:async';
 import 'dart:convert';
 import 'dart:io';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:herbanusa/main.dart';
+import 'package:herbanusa/screens/history_screen.dart';
+import 'package:herbanusa/screens/result_screen.dart';
+import 'package:herbanusa/services/history_store.dart';
 import 'package:herbanusa/widgets/plant_sections.dart';
 import 'package:herbanusa/models/analysis.dart';
 import 'package:herbanusa/models/model_card.dart';
@@ -97,6 +102,65 @@ void main() {
     await tester.pumpAndSettle();
     expect(find.byIcon(Icons.open_in_new), findsWidgets);
   });
+  testWidgets(
+    'history refreshes after a save completes even if result was closed',
+    (tester) async {
+      const photo = 'test/fixtures/sample_0.jpg';
+      final label = labels.first;
+      final history = _DelayedHistory();
+      final navigator = GlobalKey<NavigatorState>();
+      var historyVersion = 0;
+
+      await tester.pumpWidget(
+        AppServices(
+          catalog: catalog,
+          classifier: _TestClassifier(label),
+          history: history,
+          child: MaterialApp(
+            navigatorKey: navigator,
+            home: StatefulBuilder(
+              builder: (context, setState) => Column(
+                children: [
+                  TextButton(
+                    onPressed: () => navigator.currentState!.push(
+                      MaterialPageRoute<void>(
+                        builder: (_) => ResultScreen(
+                          imagePath: photo,
+                          onHistorySaved: () =>
+                              setState(() => historyVersion++),
+                        ),
+                      ),
+                    ),
+                    child: const Text('Buka hasil'),
+                  ),
+                  Expanded(
+                    child: HistoryScreen(historyVersion: historyVersion),
+                  ),
+                ],
+              ),
+            ),
+          ),
+        ),
+      );
+      await tester.pumpAndSettle();
+      await tester.tap(find.text('Buka hasil'));
+      await tester.pumpAndSettle();
+      expect(find.text('Hasil Identifikasi'), findsOneWidget);
+      expect(history.addCalls, 1);
+      expect(historyVersion, 0);
+
+      navigator.currentState!.pop();
+      await tester.pumpAndSettle();
+      expect(find.text('Belum ada foto yang dianalisis'), findsOneWidget);
+
+      history.finishSave.complete();
+      await tester.pumpAndSettle();
+      expect(find.text(plant(label).local), findsOneWidget);
+      expect(historyVersion, 1);
+      expect(history.addCalls, 1);
+    },
+  );
+
   test('every look-alike names a known poisonous species', () {
     for (final p in catalog.plants.values) {
       for (final alike in p.lookAlikes) {
@@ -194,4 +258,44 @@ void main() {
       expect(catalog.dangerousIn(analysis), isEmpty);
     });
   });
+}
+
+class _TestClassifier implements PlantClassifier {
+  _TestClassifier(this.label);
+
+  final String label;
+
+  @override
+  Future<Analysis?> analyze(String imagePath) async =>
+      Analysis(top: [PlantScore(label, .9)], threshold: .27);
+
+  @override
+  void dispose() {}
+}
+
+class _DelayedHistory extends HistoryStore {
+  final finishSave = Completer<void>();
+  final _entries = <HistoryEntry>[];
+  int addCalls = 0;
+
+  @override
+  Future<List<HistoryEntry>> load() async => List.of(_entries);
+
+  @override
+  Future<void> add({
+    required String sourcePath,
+    required String species,
+    required double probability,
+  }) async {
+    addCalls++;
+    await finishSave.future;
+    _entries.add(
+      HistoryEntry(
+        imagePath: sourcePath,
+        species: species,
+        probability: probability,
+        createdAt: DateTime(2026),
+      ),
+    );
+  }
 }
