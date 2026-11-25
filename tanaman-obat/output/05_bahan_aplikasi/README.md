@@ -211,4 +211,4 @@ kolom "Model bisa menjawab", tampilkan baris tambahan
 ## 7. Yang perlu ditanyakan ke tim ML
 
 - Isi `knowledge_base.json` (100 entri) dan `danger_list.json`
-- Hasil evaluasi lengkap: `metrics_model_1.json`, `PERBANDINGAN.md`
+- Hasil evaluasi lengkap: `metrics_model_1.json` dan notebook `FloraSurvival_ML.ipynb`

@@ -8,10 +8,9 @@ Indonesia. Berhenti tepat di export TFLite, sesuai lingkup yang diminta.
 | Urutan | File | Untuk siapa |
 |---|---|---|
 | 1 | `RINGKASAN.md` | Anda — laporan lengkap: semua angka, keputusan, dan batasan |
-| 2 | `05_bahan_aplikasi/README.md` | **Pengembang aplikasi** — kontrak input, aturan penolakan, matriks badge, checklist uji |
-| 3 | `05_bahan_aplikasi/README_MODEL.md` | Pengembang aplikasi — cara memanggil model di Flutter |
-| 4 | `04_perbandingan/PERBANDINGAN.md` | Anda — kenapa CNN yang dikirim, bukan SVM |
-| 5 | `FloraSurvival_ML.ipynb` | Anda — seluruh pipeline dalam satu notebook (sudah dieksekusi) |
+| 2 | `PENJELASAN_PROYEK.md` | Anda/penguji — penjelasan proyek dari nol: latar belakang, dataset, ketiga algoritma, dan alasannya |
+| 3 | `FloraSurvival_ML.ipynb` | Anda — seluruh pipeline; grafik dan tabel tampil langsung di dalamnya |
+| 4 | `05_bahan_aplikasi/README.md` | **Pengembang aplikasi** — kontrak input, aturan penolakan, matriks badge, checklist uji |
 
 ## Yang diserahkan ke teman Anda
 
@@ -23,7 +22,6 @@ labels.json         100 kelas, urutan = urutan output
 model_meta.json     spesifikasi + hasil verifikasi numerik
 safety_rules.json   AMBANG = 0.27 + aturan penolakan
 README.md           dokumen acuan aplikasi
-README_MODEL.md     cara pakai di Flutter
 metrics_model_1.json
 ```
 
@@ -36,7 +34,7 @@ Normalisasi ada di dalam model. Dibagi 255 → akurasi hancur tanpa error.
 |---|---|---|---|---|
 | CNN MobileNetV2 224px (**dikirim**) | 89,2% | 95,3% | 4,3% → **2,2%** dengan AMBANG | 4,56 MB |
 | SVM RBF (embedding CNN) | 89,9% | 95,7% | 3,6% | ±17 MB + kode Dart |
-| Random Forest 300 | 87,2% | 95,3% | 4,3% | ±171 MB |
+| Random Forest 300 | 87,2% | 95,3% | 4,3% | ±175 MB |
 
 Dengan `AMBANG = 0.27`: 93,4% foto dijawab, akurasi **92,7%**. Pada cakupan yang sama CNN mengalahkan SVM (92,7% vs 90,6%).
 
@@ -48,6 +46,7 @@ Script ada di `../scripts/`, jalan berurutan:
 $py = "C:\Users\Wahyu Pratomo\anaconda3\envs\ENV_001\python.exe"
 $s  = "C:\Users\Wahyu Pratomo\Project Machine Learning\tanaman-obat\scripts"
 
+& $py $s\00_eda.py              # EDA pada data mentah (1 menit)
 & $py $s\00_prepare.py          # bersihkan + split (2 menit)
 & $py $s\01_train_cnn.py --img 224 --head 3 --fine 15 --batch 16 `
       --dropout 0.4 --ls 0.1 --out 01_cnn      # 60 menit, CPU
@@ -67,6 +66,11 @@ cd output
 `nbconvert` di atas (±80 menit) supaya sel punya output seperti file yang
 diserahkan.
 
+Urutan tahap di notebook: **Tahap 0 EDA (data mentah)** → **Tahap 1 pembersihan
++ split** → **Tahap 2 training**. EDA sengaja dijalankan sebelum pembersihan
+dan sebelum preprocessing; preprocessing citra (resize 224, augmentasi,
+normalisasi) baru ada di Tahap 2.
+
 Urutan penting: `02`–`06b` membaca artefak dari `01_cnn`, jadi latih model
 dulu. `06_threshold.py` harus dijalankan setelah `01_train_cnn.py` dan
 sebelum laporan dipakai, karena `safety_rules.json` berasal dari situ.
@@ -83,10 +87,11 @@ Percobaan pembanding (tidak perlu dijalankan ulang):
 | Folder | Isi |
 |---|---|
 | `_data/` | manifest split + `labels.json` |
+| `eda/` | grafik dan statistik EDA (dihitung dari data mentah) |
 | `01_cnn/` | model final 224px, metrik, 4 grafik, embedding |
 | `01_cnn_128/` | percobaan 128px (pembanding) |
 | `01_cnn_128_tta/` | evaluasi TTA (pembanding) |
-| `02_svm/` | SVM + `DEPLOY.md` |
+| `02_svm/` | SVM, metrik, grafik |
 | `03_rf/` | Random Forest |
 | `04_perbandingan/` | tabel + grafik perbandingan |
 | `05_bahan_aplikasi/` | **paket serah terima** |

@@ -15,7 +15,7 @@ import numpy as np
 import pandas as pd
 
 sys.path.insert(0, str(Path(__file__).parent))
-from common import OUT, load_tags, save_json
+from common import OUT, load_tags, save_json, show_fig, tampil
 
 import matplotlib  # noqa: E402
 matplotlib.use("Agg")
@@ -125,6 +125,13 @@ ax.scatter([chosen.cakupan * 100], [chosen.akurasi * 100], s=70, color="#c62828"
 ax.set_xlabel("Foto yang dijawab (%)"); ax.set_ylabel("Akurasi pada yang dijawab (%)")
 ax.set_title("Pemilihan AMBANG dari data validasi")
 ax.invert_xaxis(); ax.grid(alpha=.3); ax.legend(fontsize=8)
-plt.tight_layout(); plt.savefig(FIG / "ambang.png", dpi=130); plt.close()
+show_fig(fig, FIG / "ambang.png", dpi=130)
 
+# --- tabel aturan ---
+tampil("Aturan penolakan yang disimpan", pd.DataFrame({
+    "Item": ["AMBANG", "Cakupan di validasi", "Akurasi di validasi", "Cakupan di test",
+             "Akurasi di test", "Fatal di test"],
+    "Nilai": [f"{AMBANG:.2f}", f"{chosen.cakupan:.1%}", f"{chosen.akurasi:.1%}",
+              f"{sel.mean():.1%}", f"{acc_te:.1%}", f"{int(fatal_sel.sum())}/{n_tox_sel}"],
+}))
 print("DONE TAHAP 6a", flush=True)

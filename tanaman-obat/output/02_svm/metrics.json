@@ -3,7 +3,7 @@
   "top1": 0.8990514905149052,
   "top3": 0.9566395663956639,
   "macro_f1": 0.8965952161531122,
-  "train_sec": 55.8,
+  "train_sec": 40.5,
   "n_test": 1476,
   "n_test_beracun": 444,
   "recall_beracun_sebagai_beracun": 0.9279279279279279,

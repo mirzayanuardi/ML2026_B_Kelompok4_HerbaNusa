@@ -26,6 +26,16 @@ Pembagian stratified per kelas, seed 42. Duplikat dibuang **sebelum** split,
 supaya tidak ada gambar yang sama muncul di train dan test (penyebab akurasi
 palsu yang paling sering).
 
+**EDA dijalankan pada data mentah, sebelum pembersihan.** Hasilnya: 10.000
+gambar, tepat 100 per kelas, semuanya 128×128 RGB. Brightness 25,5–214,0
+(rata-rata 107,8), kontras 12,8–98,9, ukuran file 3,6–13,5 KB. Outlier aturan
+1,5×IQR hanya 0,7–2,1% (213 brightness, 124 kontras, 69 ukuran file) dan
+sengaja dipertahankan karena gambarnya masih wajar. Korelasi antar fitur lemah
+(|r| < 0,2), sehingga tidak ada fitur yang perlu dibuang. EDA menemukan 69
+duplikat persis dan 92 near-duplicate — angka inilah yang dibersihkan di tahap
+persiapan data. Preprocessing citra (resize 224, augmentasi, normalisasi) tidak
+dilakukan di EDA maupun di pembersihan; itu baru ada di Tahap 2 saat training.
+
 ---
 
 ## 2. Model 1 — CNN MobileNetV2
@@ -77,8 +87,7 @@ tertutup oleh 224px dalam satu kali inferensi.
 | Ukuran bobot SVM | 26,7 MB (float32) / 13,3 MB (float16) |
 
 SVM **bukan pengganti** CNN: inputnya vektor 1.280 dimensi keluaran CNN. Jadi
-di HP alurnya dua tahap. Hitungan biaya deploy ada di
-`02_svm/DEPLOY.md`.
+di HP alurnya dua tahap. Hitungan biaya deploy ada di Tahap 6b notebook.
 
 ---
 
@@ -91,12 +100,14 @@ di HP alurnya dua tahap. Hitungan biaya deploy ada di
 | Macro-F1 | 86,60% |
 | Fatal | 19/444 = 4,3% |
 | Waktu fit | 0,7 menit |
-| Ukuran | 864.146 node, ± 171 MB (perkiraan float32) |
+| Jumlah node | 857.250 (428.775 leaf) |
+| Ukuran di scikit-learn | **700 MB** (tabel 100 kelas disimpan di setiap node) |
+| Ukuran format padat (perkiraan) | 175 MB |
 
-RF juara top-3 di antara model non-CNN, tapi 171 MB tidak mungkin dikirim ke
-HP dan tidak ada dukungan TFLite untuk forest. Pada cakupan 80%, CNN justru
-paling akurat (97,0%) dibanding RF (94,8%) dan SVM (91,5%), jadi RF tidak
-punya keunggulan kalibrasi yang bisa dipakai.
+RF tidak layak dikirim ke HP karena tiga hal: ukurannya (700 MB asli, 175 MB
+bahkan setelah dipadatkan), tidak ada dukungan TFLite untuk forest (857 ribu
+percabangan harus ditulis manual di Dart), dan akurasinya justru paling rendah
+pada cakupan yang dipakai aplikasi (90,7% vs CNN 92,7%).
 
 ---
 
@@ -106,7 +117,7 @@ punya keunggulan kalibrasi yang bisa dipakai.
 |---|---|---|---|---|---|---|
 | CNN MobileNetV2 | 89,16% | 95,26% | 88,81% | 4,3% | 13,9% | **4,56 MB** |
 | SVM RBF | **89,91%** | **95,66%** | **89,66%** | 3,60% | 13,7% | ±17 MB + kode Dart |
-| Random Forest 300 | 87,20% | 95,33% | 86,60% | 4,3% | 14,2% | ±171 MB |
+| Random Forest 300 | 87,20% | 95,33% | 86,60% | 4,3% | 14,2% | ±175 MB (padat) |
 
 SVM menang tipis di top-1 (0,75 poin), **tetapi yang dikirim ke aplikasi
 adalah CNN murni.** Alasannya bukan selera:
@@ -256,13 +267,14 @@ paket ini sudah utuh dan bisa dipertanggungjawabkan.
 | Folder | Isi |
 |---|---|
 | `_data/` | `labels.json`, `train.csv`, `val.csv`, `test.csv`, `dataset_report.csv` |
-| `01_cnn/` | **Model final 224px**: `model.keras`, `metrics.json`, `HASIL.md`, 4 grafik, embedding + probabilitas |
+| `eda/` | `figures/` grafik EDA (distribusi kelas, fitur, outlier, korelasi, contoh gambar) |
+| `01_cnn/` | **Model final 224px**: `model.keras`, `metrics.json`, 4 grafik, embedding + probabilitas |
 | `01_cnn_128/` | Percobaan 128px, disimpan sebagai pembanding |
 | `01_cnn_128_tta/` | Evaluasi TTA, disimpan sebagai pembanding |
-| `02_svm/` | SVM + `HASIL.md` + `DEPLOY.md` |
-| `03_rf/` | Random Forest + `HASIL.md` |
-| `04_perbandingan/` | `PERBANDINGAN.md`, `tabel_model.csv`, `kesalahan_fatal.csv`, 3 grafik |
-| `05_bahan_aplikasi/` | **Yang diserahkan ke teman Anda**: `model.tflite`, `labels.json`, `model_meta.json`, `safety_rules.json`, `README.md`, `README_MODEL.md` |
+| `02_svm/` | SVM, metrik, grafik |
+| `03_rf/` | Random Forest, metrik, grafik |
+| `04_perbandingan/` | `tabel_model.csv`, `kesalahan_fatal.csv`, 3 grafik |
+| `05_bahan_aplikasi/` | **Yang diserahkan ke teman Anda**: `model.tflite`, `labels.json`, `model_meta.json`, `safety_rules.json`, `README.md` |
 | `FloraSurvival_ML.ipynb` | Notebook tunggal: seluruh pipeline tahap 0–6, **sudah dieksekusi** |
 
 Grafik penting: `01_cnn/figures/kurva_training.png`,

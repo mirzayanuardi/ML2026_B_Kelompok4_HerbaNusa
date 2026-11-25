@@ -75,16 +75,36 @@ def worst_classes(y, pred, labels, n=15):
     return df.head(n), df.tail(min(10, len(df)))
 
 
-def write_md(path, title, sections):
-    """sections: list of (judul, isi_markdown)"""
-    lines = [f"# {title}", ""]
-    for head, body in sections:
-        lines.append(f"## {head}")
-        lines.append("")
-        lines.append(body.rstrip())
-        lines.append("")
-    Path(path).write_text("\n".join(lines), encoding="utf-8")
-    print("  md ->", path)
+def show_fig(fig, path, dpi=130):
+    """Simpan grafik ke PNG sekaligus tampilkan inline saat dijalankan di Jupyter."""
+    fig.tight_layout()
+    fig.savefig(path, dpi=dpi, bbox_inches="tight")
+    try:
+        from IPython.display import Image, display
+        display(Image(filename=str(path)))
+    except Exception:
+        pass
+    import matplotlib.pyplot as plt
+    plt.close(fig)
+
+
+def tampil(judul, tabel):
+    """Tampilkan DataFrame sebagai tabel di notebook (jatuh ke print di terminal)."""
+    try:
+        from IPython.display import Markdown, display
+        display(Markdown(f"**{judul}**"))
+        display(tabel)
+    except Exception:
+        print(f"\n{judul}\n{tabel}")
+
+
+def tampil_teks(md):
+    """Tampilkan teks markdown di notebook."""
+    try:
+        from IPython.display import Markdown, display
+        display(Markdown(md))
+    except Exception:
+        print(md)
 
 
 def save_json(path, obj):

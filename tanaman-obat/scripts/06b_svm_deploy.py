@@ -5,7 +5,7 @@ dari CNN. Skrip ini mengukur berapa besar dan seberapa berat SVM itu kalau
 benar-benar dipasang di aplikasi, supaya keputusan model mana yang dikirim
 tidak cuma berdasarkan akurasi.
 
-Output: output/02_svm/DEPLOY.md + svm_model.pkl (opsional, untuk pengembangan)
+Output: angka biaya deploy SVM, ditampilkan langsung di notebook
 """
 import json
 import sys
@@ -13,12 +13,13 @@ import time
 from pathlib import Path
 
 import numpy as np
+import pandas as pd
 from sklearn.pipeline import make_pipeline
 from sklearn.preprocessing import StandardScaler
 from sklearn.svm import SVC
 
 sys.path.insert(0, str(Path(__file__).parent))
-from common import OUT, write_md
+from common import OUT, tampil, tampil_teks
 
 SRC = OUT / "01_cnn"
 D = OUT / "02_svm"
@@ -109,51 +110,19 @@ if cnn_cov is not None and svm_cov is not None and cov:
                 f"dibanding CNN murni — tapi keunggulan itu hilang begitu aturan "
                 f"penolakan dipakai." if gain is not None else "")
 else:
-    kal_banding = "Perbandingan pada cakupan yang sama ada di `04_perbandingan/PERBANDINGAN.md`."
+    kal_banding = "Perbandingan pada cakupan yang sama ditampilkan di tahap perbandingan notebook."
     kal_gain = f"Akurasi naik {idn(gain)} poin dibanding CNN murni." if gain is not None else ""
 
 
-body = f"""SVM adalah model dengan akurasi tertinggi ({kal_hasil}), **tetapi SVM
-tidak bisa berdiri sendiri**. Dia bekerja di atas vektor 1.280 dimensi yang
-dihasilkan MobileNetV2. Artinya di HP harus ada dua tahap:
-
-1. Gambar -> TFLite MobileNetV2 (sampai lapisan `embedding`) -> 1.280 angka
-2. 1.280 angka -> hitung kernel RBF ke semua support vector -> pilih kelas
-
-| Item | Nilai |
-|---|---|
-| Support vector | {n_sv:,} |
-| Dimensi fitur | {n_features} |
-| Ukuran bobot SVM (float32) | **{idn(sv_float32_mb)} MB** |
-| Ukuran bobot SVM (float16) | {idn(sv_float16_mb)} MB |
-| Ukuran backbone CNN (tanpa kepala) | ~3,7 MB |
-| Evaluasi kernel per inferensi | {n_sv:,} x {n_features} |
-| Beban tambahan per inferensi | ~{flops/1e6:.0f} MFLOP, {lat_py*1000:.0f} ms di laptop ini |
-
-Konsekuensi praktis:
-
-- **Ukuran jadi masalah utama.** {n_sv:,} support vector x {n_features} dimensi:
-  float32 = **{idn(sv_float32_mb)} MB**, float16 = **{idn(sv_float16_mb)} MB**, ditambah
-  backbone ~3,7 MB. Totalnya sudah lewat batas 15 MB sebelum kode aplikasi dihitung.
-- **Tidak ada operator SVM di TFLite.** Kernel RBF harus ditulis manual di Dart
-  ({n_sv:,} dot product {n_features} dimensi untuk setiap foto). Jadi tidak bisa
-  sekadar "salin `model.tflite` lalu jalan".
-- Beban hitungnya sendiri masih wajar (~{flops/1e6:.0f} MFLOP, {lat_py*1000:.0f} ms di laptop
-  ini), jadi yang memberatkan adalah ukuran dan kerumitan kode, bukan kecepatan.
-- {kal_gain}
-
-**Keputusan paket ini:** yang dikirim ke aplikasi adalah **CNN murni**
-(`model.tflite` 4,6 MB, 1 inferensi, tanpa kode tambahan). SVM disimpan
-sebagai jalur peningkatan v2 kalau nanti ponsel target sudah lebih kuat,
-atau dipakai di sisi server.
-
-Yang membuat CNN tetap layak: {kal_tutup}. {kal_banding}
-"""
-write_md(D / "DEPLOY.md", "Biaya Deploy Model 2 (SVM) di HP", [
-    ("Ringkasan", body),
-    ("Catatan pengukuran", f"""Latensi {idn(lat_py*1000)} ms/gambar diukur di laptop CPU ini,
-bukan di HP. Angka itu hanya pembanding relatif, bukan janji performa.
-Semua angka ukuran adalah perkiraan dari jumlah support vector x dimensi x
-ukuran tipe data, tanpa kompresi."""),
-])
+# --- tabel biaya deploy ---
+tampil("Biaya membawa SVM ke HP", pd.DataFrame({
+    "Item": ["Support vector", "Dimensi fitur", "Bobot SVM float32", "Bobot SVM float16",
+             "Backbone CNN (tanpa kepala)", "Evaluasi kernel per inferensi",
+             "Beban tambahan per inferensi", "Latensi referensi di laptop"],
+    "Nilai": [f"{n_sv:,}", f"{n_features}", f"{idn(sv_float32_mb)} MB",
+              f"{idn(sv_float16_mb)} MB", "~3,7 MB", f"{n_sv:,} x {n_features}",
+              f"~{flops/1e6:.0f} MFLOP", f"{idn(lat_py*1000)} ms/gambar"],
+}))
+tampil_teks("**Kesimpulan:** yang dikirim ke HP adalah CNN murni. SVM butuh dua tahap dan sekitar "
+            f"{idn(sv_float16_mb)} MB tambahan.")
 print("DONE TAHAP 6b", flush=True)

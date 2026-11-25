@@ -7,7 +7,8 @@ import numpy as np
 import pandas as pd
 
 sys.path.insert(0, str(Path(__file__).parent))
-from common import OUT, load_labels, load_tags, safety_metrics, save_json, write_md  # noqa: E402
+from common import (OUT, load_labels, load_tags, safety_metrics, save_json,  # noqa: E402
+                    show_fig, tampil)
 
 import matplotlib  # noqa: E402
 matplotlib.use("Agg")
@@ -85,7 +86,6 @@ comp = comp[["model", "top1", "top3", "macro_f1", "recall_beracun",
 comp.to_csv(D / "tabel_model.csv", index=False)
 pd.DataFrame(percat).to_csv(D / "per_kategori.csv", index=False)
 pd.DataFrame(fatal_rows).to_csv(D / "kesalahan_fatal.csv", index=False)
-print(comp.to_string(index=False), flush=True)
 
 # --- figur: bar akurasi ---
 fig, ax = plt.subplots(figsize=(8, 4.6))
@@ -100,7 +100,7 @@ ax.set_ylabel("Akurasi (%)"); ax.set_ylim(0, 113)
 ax.set_title("Perbandingan akurasi 3 algoritma")
 ax.legend(loc="upper center", ncol=2, frameon=False)
 ax.grid(axis="y", alpha=.3)
-plt.tight_layout(); plt.savefig(FIG / "bar_akurasi.png", dpi=130); plt.close()
+show_fig(fig, FIG / "bar_akurasi.png", dpi=130)
 
 # --- kurva abstain gabungan ---
 fig, ax = plt.subplots(figsize=(7.4, 4.6))
@@ -109,7 +109,7 @@ for name, cur in curves.items():
 ax.set_xlabel("Foto yang dijawab (%)"); ax.set_ylabel("Akurasi pada yang dijawab (%)")
 ax.set_title("Kalau model ragu, jangan dijawab")
 ax.invert_xaxis(); ax.grid(alpha=.3); ax.legend(fontsize=8)
-plt.tight_layout(); plt.savefig(FIG / "kurva_abstain_semua.png", dpi=130); plt.close()
+show_fig(fig, FIG / "kurva_abstain_semua.png", dpi=130)
 
 # --- figur fatal ---
 fig, ax = plt.subplots(figsize=(8, 4.2))
@@ -120,7 +120,7 @@ ax.set_ylabel("Kesalahan fatal (%)")
 ax.set_ylim(0, float(comp.fatal_rate.max()) * 100 * 1.35)
 ax.set_title("Beracun ditebak sebagai tanaman pangan")
 ax.grid(axis="y", alpha=.3)
-plt.tight_layout(); plt.savefig(FIG / "kesalahan_fatal.png", dpi=130); plt.close()
+show_fig(fig, FIG / "kesalahan_fatal.png", dpi=130)
 
 cur_all = pd.concat([c.assign(model=k) for k, c in curves.items()])
 cur_all.to_csv(D / "kurva_abstain.csv", index=False)
@@ -151,6 +151,12 @@ else:
     kal_ambang = "Angka ambang belum dihitung (jalankan `06_threshold.py`)"
 ukuran_tflite = (f"{idn(json.loads(meta_f.read_text(encoding='utf-8'))['size_mb'], 2)} MB"
                  if meta_f.exists() else "4,6 MB")
+_rf = OUT / "03_rf" / "metrics.json"
+if _rf.exists():
+    _m = json.loads(_rf.read_text(encoding="utf-8"))
+    ukuran_rf = f"{_m.get('size_padat_mb', 175):.0f} MB".replace(".", ",")
+else:
+    ukuran_rf = "175 MB"
 
 # perbandingan adil: pada cakupan yang sama, siapa paling akurat?
 if COV and cnn.akurasi_pada_cakupan is not None:
@@ -171,61 +177,27 @@ else:
     head_cov = "Akurasi @ cakupan"
     acc_cnn = acc_svm = acc_rfm = "—"
 
-tbl_pil = "\n".join([
-    f"| CNN murni (`model.tflite`) | {idn(cnn.top1 * 100)}% | {acc_cnn} | "
-    f"{ukuran_tflite} | rendah, 1 inferensi |",
-    f"| CNN + SVM | {idn(svm.top1 * 100)}% | {acc_svm} | belasan MB | "
-    f"tinggi, kernel RBF manual |",
-    f"| CNN + Random Forest | {idn(rfm.top1 * 100)}% | {acc_rfm} | ± 171 MB | "
-    f"sangat tinggi, tidak layak |",
-])
+# --- tabel perbandingan ---
+comp_tampil = comp.copy()
+for _c in ("top1", "top3", "macro_f1", "recall_beracun", "fatal_rate",
+           "false_alarm_beracun", "akurasi_pada_cakupan"):
+    comp_tampil[_c] = comp_tampil[_c].map(lambda v: "-" if pd.isna(v) else f"{v:.1%}")
+tampil("Perbandingan ketiga model di data test", comp_tampil)
 
+# --- tabel pilihan deploy ---
+pil = pd.DataFrame([
+    ["CNN murni (`model.tflite`)", f"{idn(cnn.top1 * 100)}%", acc_cnn, ukuran_tflite,
+     "rendah, 1 inferensi"],
+    ["CNN + SVM", f"{idn(svm.top1 * 100)}%", acc_svm, "belasan MB",
+     "tinggi, kernel RBF manual"],
+    ["CNN + Random Forest", f"{idn(rfm.top1 * 100)}%", acc_rfm, f"+/- {ukuran_rf}",
+     "sangat tinggi, tidak layak"],
+], columns=["Pilihan", "Top-1 semua foto", head_cov, "Ukuran tambahan", "Kerumitan di aplikasi"])
+tampil("Pilihan yang bisa dikirim ke HP", pil)
 
+# --- contoh kesalahan fatal ---
+if fatal_rows:
+    tampil("Contoh kesalahan fatal", pd.DataFrame(fatal_rows).head(15))
 
-tbl = "\n".join(
-    f"| {r.model} | {r.top1:.1%} | {r.top3:.1%} | {r.macro_f1:.1%} | "
-    f"{r.fatal_rate:.1%} | {r.false_alarm_beracun:.1%} |" for r in comp.itertuples())
-tbl_cov = ""
-for name, c in curves.items():
-    tbl_cov += f"\n**{name}**\n\n| Cakupan | Akurasi |\n|---|---|\n" + \
-               "\n".join(f"| {r.coverage:.0%} | {r.accuracy:.1%} |" for r in c.itertuples()) + "\n"
-tbl_fatal = "\n".join(f"| {r.model} | {r.aktual} | {r.ditebak} |"
-                      for r in pd.DataFrame(fatal_rows).head(25).itertuples()) if fatal_rows else "(tidak ada)"
-
-sections = [
-    ("Tabel perbandingan", f"""| Model | Top-1 | Top-3 | Macro-F1 | Fatal | Alarm palsu |
-|---|---|---|---|---|---|
-{tbl}"""),
-    ("Pemenang", f"""Kalau semua foto wajib dijawab, **{best.model}** unggul di top-1
-({idn(best.top1 * 100)}%). Tapi aplikasi ini punya aturan "kalau ragu jangan
-dijawab", dan aturan itu mengubah pemenangnya.
-
-{kal_cov} {kal_menang}
-
-Tabel di bawah memakai angka yang benar-benar dipakai aplikasi. Model 2 dan 3
-butuh **dua tahap** di HP karena memakai embedding dari model 1 (jaringan CNN
-+ perhitungan SVM/RF di Dart). Lihat `02_svm/DEPLOY.md` untuk hitungan
-ukuran dan bebannya.
-
-| Pilihan | Top-1 semua foto | {head_cov} | Ukuran tambahan | Kerumitan di aplikasi |
-|---|---|---|---|
-{tbl_pil}
-
-**Rekomendasi paket ini: CNN murni.** {kal_ambang}, tanpa tambahan ukuran
-maupun kode di HP."""),
-    ("Akurasi vs cakupan", f"""Semakin banyak foto ditolak, semakin tinggi akurasi.
-Inilah dasar aturan "kalau ragu jangan dijawab".
-{tbl_cov}"""),
-    ("Contoh kesalahan fatal", f"""| Model | Aktual (beracun) | Ditebak (aman dimakan) |
-|---|---|---|
-{tbl_fatal}"""),
-    ("Cara membaca", """- **Top-1**: tebakan pertama benar.
-- **Top-3**: jawaban benar ada di 3 kandidat teratas.
-- **Fatal**: foto tanaman beracun ditebak sebagai spesies pangan yang aman.
-  Ini metrik utama untuk keselamatan.
-- **Alarm palsu**: tanaman pangan yang ditandai beracun, membuat pengguna panik."""),
-]
-write_md(D / "PERBANDINGAN.md", "Perbandingan 3 Algoritma", sections)
-save_json(D / "ringkasan.json", {"tabel": comp.to_dict("records"),
-                                 "pemenang": best.model})
+save_json(D / "ringkasan.json", {"tabel": comp.to_dict("records"), "pemenang": best.model})
 print("DONE TAHAP 5", flush=True)
